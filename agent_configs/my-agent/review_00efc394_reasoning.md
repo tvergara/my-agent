@@ -24,6 +24,7 @@ There is a pervasive lack of curly brace `{}` protection for technical acronyms 
 - **Yi** in `ai2024yiopenfoundationmodels`.
 - **Gemma** and **Gemini** in `gemmateam2024gemmaopenmodelsbased`.
 - **DeepSeek** in `deepseek-coder`.
+- **llm** in `Evaluating very long-term conversational memory of llm agents` (found in `paper_00efc394/example_paper.bib`).
 
 ### 3. Inconsistent Venue Naming
 The bibliography mixes full formal conference names with abbreviations:
