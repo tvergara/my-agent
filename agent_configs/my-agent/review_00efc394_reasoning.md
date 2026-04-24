@@ -7,31 +7,31 @@ I have reviewed the bibliography file `example_paper.bib` for the paper "Rethink
 I identified several formatting issues in the `.bib` file that affect the quality and maintainability of the bibliography:
 
 1.  **Massive Bibliography Bloat and Duplication:**
-    *   The `.bib` file contains **2,188 total entries**, which is unusually large for a conference submission.
-    *   More importantly, there are **numerous duplicate keys** (e.g., `zhuDeductiveBeamSearch2024`, `ouyangTrainingLanguageModels2022`, `lyuKeepingLLMsAligned2024`, and many others appear multiple times). This indicates a lack of cleanup in the bibliography management process.
+    *   The `.bib` file is exceptionally large (over 26,000 lines and thousands of entries).
+    *   There are **numerous duplicate keys** and redundant entries (e.g., multiple versions of the same paper citing different years or preprints).
 
 2.  **Improper Case Preservation in Titles:**
-    Many entries fail to use curly braces `{}` to preserve the capitalization of acronyms and proper nouns in titles. Examples include:
-    *   `zhangbertscore`: Title "BERTScore: Evaluating Text Generation with BERT" should have `{BERTScore}` and `{BERT}` to avoid being converted to lowercase by many BibTeX styles.
-    *   `kumarLongLaMPBenchmarkPersonalized2024`: Title "LongLaMP: A Benchmark for Personalized ...". `{LongLaMP}` should be braced.
-    *   `salemiLaMPWhenLarge2024`: `{LaMP}` should be braced.
-    *   `maharana2024evaluating`: Title "Evaluating very long-term conversational memory of llm agents" has "llm" in lowercase. It should be `{LLM}`.
-    *   Other acronyms like `NLP`, `EM`, `PAG`, `PRW`, `PTW`, `RL`, `SFT` are frequently unbraced.
+    Many entries fail to use curly braces `{}` to preserve the capitalization of acronyms and proper nouns:
+    *   `zhangbertscore`: `BERTScore` and `BERT` should be protected.
+    *   `li2023quantity`: `LLM` should be protected.
+    *   `maharana2024evaluating`: `llm` is lowercase and unbraced.
+    *   `daiWhyCanGPT2022`: `GPT` should be protected.
+    *   `ye2023comprehensivecapabilityanalysisgpt3`: `{GPT}-3` needs protection.
 
-3.  **Inconsistent Conference/Journal Names:**
-    *   Some entries use full names like "The Thirty-ninth Annual Conference on Neural Information Processing Systems" (`zhanglanguage`), while others use abbreviations like "NeurIPS" (`xie2023data`) or "ICLR" (`changbooookscore`).
+3.  **Outdated arXiv Citations:**
+    Several papers are cited as arXiv preprints despite formal publication:
+    *   `xie2023data`: Published in **NeurIPS 2023**.
+    *   `qwen2`: `Qwen2 technical report`.
+    *   `gemmateam2024gemmaopenmodelsbased`: `Gemma technical report`.
+    *   `an2024make`: `Make Your LLM Fully Utilize the Context`.
 
-4.  **Non-standard Entries and Typos:**
-    *   The entry `25TiaoXiaoXiDuoZhiNengTi_RuGuoWoBianChengHuiYilDeBoKeCSDNBoKe` contains Chinese characters and underscores in the title.
-    *   `li2023textbooksneediiphi15` and similar entries have lowercase "phi" and other potential typos in keys or titles.
+4.  **Inconsistent Conference/Journal Names:**
+    *   Venue naming varies from full conference titles to short abbreviations like "NeurIPS" or "ICLR". Standardizing these would improve the bibliography's professional appearance.
 
-5.  **Use of `\rm` in Titles:**
-    *   `li2023quantity` uses `\rm{LLM}` in the title, which is non-standard for modern BibTeX styles.
+5.  **Non-standard Entries and Typos:**
+    *   `li2023quantity` uses `\rm{LLM}` in the title, which is non-standard.
+    *   The entry `25TiaoXiaoXiDuoZhiNengTi_RuGuoWoBianChengHuiYilDeBoKeCSDNBoKe` is highly non-standard and contains Chinese characters.
 
 ## Recommendation
 
-The authors should perform a thorough cleanup of their bibliography. This includes:
-- Removing the hundreds of unused and duplicate entries.
-- Standardizing conference naming conventions.
-- Using curly braces to protect the capitalization of acronyms in titles.
-- Updating entries to reflect peer-reviewed publication venues rather than preprints where applicable.
+Perform a systematic cleanup of the bibliography to remove unused entries and duplicates. Standardize all conference names and ensure all acronyms are protected with curly braces. Replace preprints with their formally published counterparts.
