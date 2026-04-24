@@ -1,37 +1,35 @@
-# Reasoning for Citation Format Review - Paper 00efc394
+# Bibliography Audit Reasoning - Paper 00efc394
 
-I have reviewed the bibliography file `example_paper.bib` for the paper "Rethinking Personalization in Large Language Models at the Token Level" (ID: 00efc394-00f1-48e0-b064-482bf136462f).
+Paper Title: Rethinking Personalization in Large Language Models at the Token Level
+Paper ID: 00efc394-00f1-48e0-b064-482bf136462f
 
-## Findings
+## Audit Findings
 
-I identified several formatting issues in the `.bib` file that affect the quality and maintainability of the bibliography:
+### 1. Outdated arXiv Citations
+Several entries in `example_paper.bib` are cited as arXiv preprints despite having been formally published in major venues:
+- **G-eval** (`liu2023g`): Formally published in **EMNLP 2023**.
+- **LongRecipe** (`hu2024longrecipe`): Formally published in **EMNLP 2024**.
+- **One shot learning as instruction data prospector** (`li2023one`): Formally published in **ACL 2024**.
+- **What makes good data for alignment?** (`liu2023makes`): Formally published in **ICLR 2024**.
+- **Meta-learning online adaptation** (`hu2023meta`): Formally published in **ICLR 2024**.
+- **Make Your LLM Fully Utilize the Context** (`an2024make`): Formally published in **ICLR 2024**.
 
-1.  **Massive Bibliography Bloat and Duplication:**
-    *   The `.bib` file is exceptionally large (over 26,000 lines and thousands of entries).
-    *   There are **numerous duplicate keys** and redundant entries (e.g., multiple versions of the same paper citing different years or preprints).
+### 2. Missing Capitalization Protection
+There is a pervasive lack of curly brace `{}` protection for technical acronyms and proper nouns in titles, which will result in them being incorrectly rendered as lowercase in many bibliography styles:
+- **BERTScore** and **BERT** in `zhangbertscore`.
+- **G-eval**, **NLG**, and **GPT-4** in `liu2023g`.
+- **LLM** in `li2023quantity`.
+- **Phi-1.5** in `li2023textbooksneediiphi15`.
+- **Qwen2** in `qwen2`.
+- **Yi** in `ai2024yiopenfoundationmodels`.
+- **Gemma** and **Gemini** in `gemmateam2024gemmaopenmodelsbased`.
+- **DeepSeek** in `deepseek-coder`.
 
-2.  **Improper Case Preservation in Titles:**
-    Many entries fail to use curly braces `{}` to preserve the capitalization of acronyms and proper nouns:
-    *   `zhangbertscore`: `BERTScore` and `BERT` should be protected.
-    *   `li2023quantity`: `LLM` should be protected.
-    *   `maharana2024evaluating`: `llm` is lowercase and unbraced.
-    *   `daiWhyCanGPT2022`: `GPT` should be protected.
-    *   `ye2023comprehensivecapabilityanalysisgpt3`: `{GPT}-3` needs protection.
-
-3.  **Outdated arXiv Citations:**
-    Several papers are cited as arXiv preprints despite formal publication:
-    *   `xie2023data`: Published in **NeurIPS 2023**.
-    *   `qwen2`: `Qwen2 technical report`.
-    *   `gemmateam2024gemmaopenmodelsbased`: `Gemma technical report`.
-    *   `an2024make`: `Make Your LLM Fully Utilize the Context`.
-
-4.  **Inconsistent Conference/Journal Names:**
-    *   Venue naming varies from full conference titles to short abbreviations like "NeurIPS" or "ICLR". Standardizing these would improve the bibliography's professional appearance.
-
-5.  **Non-standard Entries and Typos:**
-    *   `li2023quantity` uses `\rm{LLM}` in the title, which is non-standard.
-    *   The entry `25TiaoXiaoXiDuoZhiNengTi_RuGuoWoBianChengHuiYilDeBoKeCSDNBoKe` is highly non-standard and contains Chinese characters.
+### 3. Inconsistent Venue Naming
+The bibliography mixes full formal conference names with abbreviations:
+- `zhangbertscore` and `holtzman2020curious` use "International Conference on Learning Representations".
+- `duBilinearClassesStructural2021` uses "Proceedings of the 38th International Conference on Machine Learning".
+- `zhanglanguage` uses "The Thirty-ninth Annual Conference on Neural Information Processing Systems".
 
 ## Recommendation
-
-Perform a systematic cleanup of the bibliography to remove unused entries and duplicates. Standardize all conference names and ensure all acronyms are protected with curly braces. Replace preprints with their formally published counterparts.
+Updating these preprints to their formal venues and ensuring proper acronym protection will significantly improve the manuscript's scholarly quality and professional presentation.
