@@ -1,40 +1,26 @@
-# Citation and Bibliography Audit: Consensus is Not Verification
+# Bibliography Audit Reasoning - Paper c1935a69
 
-I have performed a systematic audit of the bibliography and citation formatting for the paper "Consensus is Not Verification: Why Crowd Wisdom Strategies Fail for LLM Truthfulness" (ID: c1935a69).
+Paper Title: Towards a Theoretical Understanding of Self-Correction in Large Language Models
+Paper ID: c1935a69-6500-4b2e-a579-03046f8c5f0b
 
-## Key Findings
+## Audit Findings
 
-### 1. Duplicate and Redundant Entries
-The bibliography contains several redundant entries for the same works:
-- **Humanity's Last Exam**: Cited as both `phan2025humanity` and `phan2025humanitysexam`.
-- **BoolQ**: Cited as both `clark2019boolqexploringsurprisingdifficulty` and `clark2019boolq`.
-- **Self-Consistency**: The `wang2023self` entry is redundant with standard citations of the self-consistency method in this domain.
+### 1. Duplicate Bibliography Entries
+The `references.bib` file contains redundant entries for the same works, which should be consolidated:
+- **Phan et al. (Humanity's Last Exam)**: `phan2025humanity` and `phan2025humanitysexam`.
+- **Clark et al. (BoolQ)**: `clark2019boolqexploringsurprisingdifficulty` and `clark2019boolq`.
 
-### 2. Missing Capitalization Protection (Curly Braces)
-Technical acronyms and proper nouns in titles often lack curly brace protection, which will result in incorrect lowercasing in many bibliography styles:
-- **Acronyms**: `LLM`, `LLMs`, `RL`, `RLHF`, `GPT-4`, `o1`, `MATH`, `BoolQ`, `Com2Sense`, `DIVE`, `ForecastBench`.
-- **Proper Nouns**: `DeepSeekMath`, `Gemini 2.5`, `Qwen3`, `Gemma 3`, `DeepSeek-R1`.
-- **Examples**:
-    - `guo2025deepseekr1`: "LLMs" -> `{LLMs}`.
-    - `schoenegger2024wisdom`: "LLM" -> `{LLM}`.
-    - `qwen2025qwen3`: "Qwen3" -> `{Qwen3}`.
+### 2. Missing Capitalization Protection in Titles
+Several model names, benchmarks, and acronyms lack curly brace `{}` protection, leading to incorrect lowercasing in many BibTeX styles:
+- **Models**: `{D}eep{S}eek-{R}1`, `{D}eep{S}eek{M}ath`, `{O}pen{AI} o1`, `{G}emini 2.5`, `{Q}wen3`, `{GPT}-oss`, `{Q}wen2.5`.
+- **Benchmarks**: `{B}ool{Q}`, `{T}ruthful{QA}`, `{C}om2{S}ense`, `{F}orecast{B}ench`, `{AIME}`.
+- **Terms/Acronyms**: `{LLM}`, `{LLM}s`, `{B}est-of-{N}`, `{M}in-p`.
 
-### 3. Outdated arXiv Citations
-Many foundational and recent works are cited as arXiv preprints despite having formal peer-reviewed versions available by early 2026:
-- **DeepSeekMath** (Shao et al. 2024) -> **ICLR 2024** (or similar).
-- **Large Language Monkeys** (Brown et al. 2024) -> **ICML 2024**.
-- **TruthfulQA** (Lin et al. 2022) -> **ACL 2022** (already noted in `lin2022truthfulqa`, but `kadavath2022language` is still a preprint).
-- **GPT-4 Technical Report** (2023) and **Qwen2.5 Technical Report** (2024) should be checked for formal archival citations if applicable.
+### 3. Preprint vs. Published Versions
+Many entries cite "arXiv preprint" for papers that have since been published in major conferences (e.g., `schaeffer2025monkeys` at ICML 2025, `huang2024large` at ICLR 2024, `wang2023self` at ICLR 2023). Updating these to their definitive conference versions is recommended.
 
-### 4. Metadata Errors
-- **Truncated Author Lists**: The entry `phan2025humanitysexam` ends in `... [truncated]`, which will cause BibTeX errors.
-- **Incomplete Pages**: The `schaeffer2025monkeys` entry is missing page numbers.
+### 4. Messy Author Lists
+- `phan2025humanitysexam`: Contains an extremely long, comma-separated list of authors in the `author` field that is eventually truncated with `[truncated]`. This is likely an artifact of an automated export and should be cleaned to follow standard BibTeX conventions (e.g., using `and others`).
 
-## Recommendations
-- Clean the `.bib` file to remove duplicate entries for "Humanity's Last Exam" and "BoolQ".
-- Apply curly brace protection to all technical acronyms and model names in titles.
-- Update preprints to their formal conference or journal publications.
-- Fix truncated author fields to ensure correct citation rendering.
-
----
-*Audit performed by my-agent (Focus: Citation Integrity).*
+## Recommendation
+Consolidate duplicate entries, apply capitalization protection to all technical terms and model names in titles, and update arXiv preprints to their definitive published versions.
