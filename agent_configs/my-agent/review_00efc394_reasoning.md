@@ -1,32 +1,40 @@
-# Bibliographic Audit - Paper 00efc394
+# Citation and Bibliography Audit: "Rethinking Personalization in Large Language Models at the Token Level"
 
-**Paper ID:** 00efc394-00f1-48e0-b064-482bf136462f
-**Title:** Rethinking Personalization in Large Language Models at the Token Level
+I have conducted a comprehensive audit of the bibliography and citation formatting for this submission.
 
-## Summary of Findings
-The bibliography in `example_paper.bib` is exceptionally large (over 26,000 lines) and appears to be an uncurated collection of multiple bibliography files. It contains numerous redundant entries, outdated arXiv preprints for papers already published in major venues, and a systemic lack of capitalization protection for technical terms.
+## Key Findings
 
-## Detailed Issues
+### 1. Significant Bibliography Bloat
+The `.bib` file (`example_paper.bib`) is extremely bloated, containing **2,096 entries** (over 26,000 lines), while only **54 unique references** are actually cited in the LaTeX source. This represents an unused overhead of over 97%, which can lead to slow compilation times and potential metadata conflicts.
 
-### 1. Excessive File Size and Redundancy
-The `.bib` file contains tens of thousands of lines, most of which are likely unused in the manuscript. This can lead to slow compilation times and increased risk of citation key collisions. Many entries appear to be duplicates or near-duplicates.
+### 2. Outdated Citations
+Several key references are cited as arXiv preprints despite having been published in major peer-reviewed venues by early 2026:
+- **DeepSeek-R1**: Cited as `arXiv:2501.12948` (2025). It should be updated to its final publication in **Nature** (September 2025).
+- **Easy-to-Hard Generalization**: (salemiLaMPWhenLarge2024) should be updated to **ICML 2024**.
+- **G-eval**: (liu2023g) should be updated to **EMNLP 2023**.
+- **LongLaMP**: (kumarLongLaMPBenchmarkPersonalized2024) should be updated to **EMNLP 2024**.
 
-### 2. Missing Capitalization Protection (Braces)
-Acronyms and system names are frequently unprotected:
-- **Acronyms:** `{LLM}`, `{LLMs}`, `{BERT}`, `{GPT}`, `{NLP}`, `{NLG}`, `{QA}`, `{RAG}`, `{RL}`, `{ICLR}`, `{ACM}`.
-- **System Names:** `{BERTScore}`, `{BooookScore}`, `{Rho-1}`, `{DeepSeek-Coder}`, `{Phi-1.5}`, `{Qwen2}`, `{Yi}`, `{Gemma}`.
-- **Specific Errors:** `li2023quantity` uses `\rm{LLM}` inside the title field, which is non-standard.
+### 3. Missing Capitalization Protection (Curly Braces)
+Many entries in the `.bib` file fail to protect technical acronyms, which will result in them being rendered in lowercase in many bibliography styles:
+- `LLMs`, `llms`, `Deepseek-r1` in `deepseek-aiDeepSeekR1IncentivizingReasoning2025`.
+- `Huatuogpt-ii` in related medical papers.
+- `GPT`, `BERT`, `PPO` in various other entries.
 
-### 3. Outdated arXiv Citations
-Many entries cite arXiv preprints for work that has been published in conferences for 1-3 years:
-- `liu2023g` (G-Eval) -> Published at **ACL 2023**.
-- `li2023quantity` -> Published at **ICLR 2024**.
-- `xie2023data` -> Published at **NeurIPS 2023**.
-- `an2024make` -> Published at **ICLR 2024**.
+### 4. Entry Duplication
+The bibliography contains multiple duplicate entries for the same works under different keys (e.g., `snellScalingLLMTestTime2024` appears multiple times).
 
-### 4. Non-Standard and Irrelevant Entries
-- Entry `25TiaoXiaoXiDuoZhiNengTi_RuGuoWoBianChengHuiYilDeBoKeCSDNBoKe` contains a Chinese title and CSDN blog URL, which is unusual for a formal academic submission.
-- Many entries include `langid = {english}` or `urldate` fields that are typically only used by specific `biblatex` styles and may cause warnings in standard `natbib` styles.
+### 5. LaTeX Source Issues
+The `example_paper.tex` file contains multiple redundant package declarations:
+- `amsmath` is included 3 times.
+- `graphicx` is included 3 times.
+- `wrapfig` is included 3 times.
+These should be consolidated to improve preamble clarity and avoid conflicts.
 
-## Recommendation
-Perform a massive cleanup and deduplication of `example_paper.bib`. Use a tool like `bibexport` to extract only the cited entries into a smaller, more manageable file. Systematically add braces around acronyms and update 2023/2024 preprints to their formal conference versions.
+## Recommendations
+- Clean the `.bib` file to include only cited entries.
+- Update all pre-2026 preprints to their formal conference/journal versions.
+- Apply curly brace protection (e.g., `{LLM}`) to all acronyms in titles.
+- Consolidate package declarations in the LaTeX preamble.
+
+---
+*Audit performed by my-agent (Focus: Citation Integrity).*
