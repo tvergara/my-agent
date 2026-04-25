@@ -1,34 +1,31 @@
-# Audit Results for Paper 07274583
+# Bibliographic Audit: Trifuse (07274583)
 
-## Bibliography Issues (.bib)
-- Capitalization issue: `AAAI` in title `Proceedings of the AAAI Conference on Artificial Intelligenc...` should likely be in braces.
-- Capitalization issue: `Attention` in title `Attention-driven gui grounding: Leveraging pretrained multim...` should likely be in braces.
-- Capitalization issue: `Attention` in title `GUI-AIMA: Aligning Intrinsic Multimodal Attention with a Con...` should likely be in braces.
-- Capitalization issue: `NeurIPS` in title `NeurIPS 2024 Workshop on Open-World Agents...` should likely be in braces.
-- Outdated arXiv entry: `aguvis` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `bgem3` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `dimogui` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `gemini` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `gpt4o` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `gui_rl` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `guiactor` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `guiaima` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `guig1` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `guig2` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `guisurvey2` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `guisurvey` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `omniparser` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `osworldg` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `paddleocr` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `qwen2.5vl` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `qwen2vl` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `som` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `tang2025survey` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `transbench` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `uir1` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `uitars` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `wang2024mobile` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `xiao2024towards` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+I have conducted a systematic audit of the bibliography (`example_paper.bib`) for the Trifuse submission. The following issues were identified:
 
-## Citation Issues (.tex)
-- Suggestion: Using `\cite` instead of natbib's `\citep` or `\citet`, which are preferred for ICML.
+### 1. Missing Year Field
+Several key references from late 2024 and early 2025 are missing the `year` field, which is critical for correct citation rendering and sorting:
+- **uGround** (`uground`): Missing year (**2025**).
+- **OS-ATLAS** (`osatlas`): Missing year (**2025**).
+- **MLLMs Know Where to Look** (`mllmknow`): Missing year (**2025**).
+
+### 2. Outdated arXiv Citations
+Multiple entries are cited as arXiv preprints despite having formal conference publications available:
+- **Set-of-Mark (SoM)** (`som`): arXiv 2023 → **CVPR 2024**.
+- **uGround**, **OS-ATLAS**, and **MLLMs Know Where to Look** should be updated to their **ICLR 2025** versions.
+
+### 3. Missing Capitalization Protection (Brace Protection)
+The following model names, dataset names, and acronyms lack curly brace `{}` protection in their titles, which will result in incorrect lowercasing (e.g., "Qwen2-vl" instead of "Qwen2-VL") under the ICML bibliography style:
+- `Qwen2-VL` (`qwen2vl`)
+- `ShowUI` (`showui`)
+- `Aria-UI` (`ariaui`)
+- `ScreenSpot-Pro` (`screenspotpro`)
+- `UI-TARS` (`uitars`)
+- `PaddleOCR` (`paddleocr`)
+- `DiMo-GUI` (`dimogui`)
+- `VQA` (`textvqa`)
+
+### 4. Formatting Issues
+- **TextVQA** (`textvqa`): The page range uses a single hyphen (`8317-8326`) instead of the standard LaTeX double hyphen (`8317--8326`).
+- **Inconsistent Conference Naming**: There is inconsistency in how conference names are formatted (e.g., mixing "Proceedings of the IEEE conference on computer vision and pattern recognition" with other abbreviated forms).
+
+Addressing these corrections will ensure the manuscript meets professional academic standards and reflects the current state of the field.
