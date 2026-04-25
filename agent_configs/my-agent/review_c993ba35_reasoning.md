@@ -1,43 +1,25 @@
-# Audit Results for Paper c993ba35
+# Citation Audit for Paper c993ba35
 
-## Bibliography Issues (.bib)
-- Capitalization issue: `AAAI` in title `Proceedings of the AAAI Conference on Artificial Intelligenc...` should likely be in braces.
-- Capitalization issue: `ICML` in title `Proceedings of the Nineteenth International Conference on Ma...` should likely be in braces.
-- Capitalization issue: `Markov` in title `Feel-Good Thompson Sampling for Contextual Bandits: a Markov...` should likely be in braces.
-- Capitalization issue: `Markov` in title `Global Convergence of Multi-Agent Policy Gradient in Markov ...` should likely be in braces.
-- Capitalization issue: `Markov` in title `Markov $\alpha$-Potential Games...` should likely be in braces.
-- Capitalization issue: `Markov` in title `Markov games as a framework for multi-agent reinforcement le...` should likely be in braces.
-- Capitalization issue: `Markov` in title `Near-Optimal Time and Sample Complexities for Solving Discou...` should likely be in braces.
-- Capitalization issue: `Markov` in title `Variance Reduced Value Iteration and Faster Algorithms for S...` should likely be in braces.
-- Capitalization issue: `Nash` in title `The complexity of computing a Nash equilibrium...` should likely be in braces.
-- Capitalization issue: `RL` in title `VO $ Q $ L: Towards Optimal Regret in Model-free RL with Non...` should likely be in braces.
-- Outdated arXiv entry: `aina2025deepreinforcementlearningmultiagent` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `anand2024efficientreinforcementlearningglobal` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `anand2025pseudorandomnessexpanderrandomwalks` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `anand2026graphonmeanfieldsubsamplingcooperative` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `arefizadeh2024characterizationspotentialordinalpotential` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `bacchiocchi2024samplecomplexitystackelberggames` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `balcan2025learningstructuredstackelberggames` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `chen2021lyapunov` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `chen2022convergencepriceanarchyguarantees` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `cui2024majorminormeanfieldmultiagent` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `doan2020finite` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `guo2025markovalphapotentialgames` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `jin2021v` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `jusup2023safe` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `lazarsfeld2025fastfurioussymmetriclearning` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `leonardos2025globalconvergencemultiagentpolicy` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `li2021permutationinvariantpolicyoptimization` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `lin2022online` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `overman2025oversightgamelearningcooperatively` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `qu2021scalable` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `ren2024scalablespectralrepresentationsnetwork` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `shalevshwartz2016safemultiagentreinforcementlearning` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `wainwright2019variance` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `wang2026unsuperviseddecompositionrecombinationdiscriminatordriven` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `yan2025markovpotentialgameconstruction` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `yang2025agentexchangeshapingfuture` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `yu2022learningcorrelatedstackelbergequilibrium` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+I have conducted a bibliographic and LaTeX audit for this submission. The following issues were identified:
 
-## Citation Issues (.tex)
-- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 32, '\\citep': 18, '\\citet': 34}
+## 1. Outdated arXiv Citations
+The following paper is cited as a preprint but has been formally published:
+
+- **Fast and Furious Symmetric Learning in Zero-Sum Games: Gradient Descent as Fictitious Play** (Lazarsfeld et al. 2025) [arXiv:2506.13086] $\rightarrow$ **COLT 2025**.
+
+## 2. Missing Capitalization Protection
+Several titles in the `.bib` file lack curly brace protection for proper nouns and acronyms, which will cause incorrect lowercasing:
+
+- `No-Regret` $\rightarrow$ `{No-Regret}` in `lin2022online`.
+- `Markov` $\rightarrow$ `{Markov}` in `ding2022independent`.
+- `TD-learning` and `Bellman` $\rightarrow$ `{TD}-learning` and `{Bellman}` in `chen2021finite`.
+- `Lyapunov`, `Q-learning`, `TD-learning` $\rightarrow$ `{L}yapunov`, `{Q}-learning`, `{TD}-learning` in `chen2021lyapunov`.
+
+## 3. Formatting Inconsistencies
+- **Mixed Citation Commands**: The paper inconsistently uses `\cite`, `\citep`, and `\citet`. For instance, it uses `\citep{Banach1922}` on line 180 but `\cite{Kakade+Langford:2002}` on line 615. A consistent use of `natbib` commands (preferring `\citep` and `\citet`) is recommended.
+- **Key Naming**: Some bibliography keys use UUIDs or DOIs (e.g., `409cf137-dbb5-3eb1-8cfe-0743c3dc925f`, `doi:10.1137/17M1139461`), which makes the `.bib` file harder to maintain.
+
+## 4. Redundant package declarations
+The LaTeX source includes multiple redundant package declarations (e.g., `amsmath`, `graphicx`, `icml2026`).
+
+Updating these references and cleaning up the LaTeX source will improve the manuscript's professional quality.
