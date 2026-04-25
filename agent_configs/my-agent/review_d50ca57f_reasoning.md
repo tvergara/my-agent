@@ -4,34 +4,41 @@
 **Paper ID**: d50ca57f-ac9a-438f-b0f5-fab02c8d64df
 
 ## Audit Focus
-This audit focuses on bibliographic integrity, specifically the protection of technical acronyms, standardization of conference venues, and accuracy of publication metadata.
+This audit focuses on bibliographic integrity, specifically the protection of technical acronyms, duplicate entry detection, and author field formatting.
 
 ## Findings
 
 ### 1. Missing Acronym Protection in Titles
-Several titles contain technical acronyms that are not protected by curly braces `{}`. In the ICML 2026 bibliography style, these will be incorrectly lowercased (e.g., "GAN" becomes "gan").
+Several BibTeX entries contain acronyms or proper names in the `title` field that are not protected by curly braces `{}`. These will likely be lowercased in the final bibliography.
 
-*   **Entry `GAN and VAE from an optimal transport point of view`**: "GAN" and "VAE" should be "{GAN}" and "{VAE}".
-*   **Entry `Improving GANs Using Optimal Transport`**: "GANs" should be "{GAN}s".
-*   **Entry `Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA`**: "DNA" should be "{DNA}".
-*   **Entry `DeST-OT: Alignment of spatiotemporal transcriptomics data`**: While "OT" is protected as `{OT}`, the title should ideally be protected more consistently if acronyms are present.
+*   **Entry `yin2013regularized`**: "K-means" should be protected as `{K}-means`.
+*   **Entry `1peps`**: "k-means" should be protected as `{K}-means`.
+*   **Entry `JMLR:v9:vandermaaten08a`**: "t-SNE" should be protected as `{t-SNE}`.
+*   **Entry `ILSVRC15`**: "ImageNet" should be protected as `{ImageNet}`.
+*   **Entry `destot`**: "DeST-OT" should be protected as `{DeST-OT}`.
+*   **Entry `li2024gilot`**: "GiLOT" should be protected as `{GiLOT}`.
+*   **Entry `melnyk2024distributional`**: "LLM" should be protected as `{LLM}`.
+*   **Entry `pmlr-v97-behrmann19a`**: "ResNet" should be protected as `{ResNet}`.
+*   **Entry `realNVP`**: "NVP" should be protected as `{NVP}`.
+*   **Entry `wei2022single`**: "Stereo-seq" should be protected as `{Stereo-seq}`.
+*   **Entry `chen2022spatiotemporal`**: "DNA" should be protected as `{DNA}`.
 
-### 2. Unprotected Acronyms in Conference Names (Booktitles)
-Many conference names contain acronyms that are not protected, leading to inconsistent rendering.
+### 2. Duplicate Bibliography Entries
+The following entries refer to the same publication and should be consolidated:
+*   `pmlr-v84-blondel18a` and `blondel2018smooth`: Both for "Smooth and Sparse Optimal Transport" (2018).
+*   `NMF` and `2ef7006f34ff4cd7afa86c9bc8932c80`: Both for "Algorithms for non-negative matrix factorization" by Lee & Seung (2000/2001).
 
-*   **Entry `kmpp`**: `booktitle = {Proceedings of the Eighteenth Annual ACM-SIAM Symposium on Discrete Algorithms}`. "ACM-SIAM" should be "{ACM}-{SIAM}".
-*   **Entry `kernel_Kmeans`**: `booktitle = {Proceedings of the Tenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}`. "ACM SIGKDD" should be "{ACM} {SIGKDD}".
-*   **Multiple Entries**: `booktitle = {ICML}`. Should be `{ICML}` or `{International Conference on Machine Learning}`.
-*   **Multiple Entries**: `booktitle = {NeurIPS}`. Should be `{NeurIPS}` or `{Advances in Neural Information Processing Systems}`.
+### 3. Incorrect Author Field Formatting
+*   **Entry `shendure2024`**: The author field ends with `et al.`. In BibTeX, this should be replaced with `and others` to allow the bibliography style to handle the truncation correctly.
 
-### 3. Inconsistent Venue Capitalization
-The venue "Advances in Neural Information Processing Systems" is inconsistently capitalized across entries.
-*   **18 entries** use title case: `Advances in Neural Information Processing Systems`.
-*   **7 entries** use lowercase: `Advances in neural information processing systems`.
-Standardizing to title case is recommended.
-
-### 4. Outdated Metadata
-*   **Entry `vaswani2017attention`**: Cites "Advances in neural information processing systems" but is missing the specific volume or page numbers found in the final version (NeurIPS 2017, Vol 30).
+### 4. Capitalization Issues in Venues
+Several journal and conference titles have inconsistent or lowercase naming:
+*   `Nature genetics` should be `Nature Genetics`.
+*   `IEEE Transactions on pattern analysis and machine intelligence` should be `IEEE Transactions on Pattern Analysis and Machine Intelligence`.
+*   `International journal of computer vision` should be `International Journal of Computer Vision`.
 
 ## Recommendations
-Standardize all BibTeX entries to ensure acronyms are protected by curly braces and venues are consistently named and capitalized.
+- Consolidate duplicate entries.
+- Use `{}` to protect acronyms and proper names in titles.
+- Fix the `author` field in `shendure2024`.
+- Standardize and capitalize all venue names.
