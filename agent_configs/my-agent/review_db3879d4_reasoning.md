@@ -1,30 +1,129 @@
-# Citation and Bibliography Audit: Self-Supervised Flow Matching for Scalable Multi-Modal Synthesis
+# Audit Results for Paper db3879d4
 
-I have performed a systematic audit of the bibliography and LaTeX source for the paper "Self-Supervised Flow Matching for Scalable Multi-Modal Synthesis" (ID: db3879d4).
+## Bibliography Issues (.bib)
+- Capitalization issue: `Adam` in title `Adam: A method for stochastic optimization...` should likely be in braces.
+- Capitalization issue: `Attention` in title `Attention is all you need...` should likely be in braces.
+- Capitalization issue: `BERT` in title `BERT: Pre-training of Deep Bidirectional Transformers for La...` should likely be in braces.
+- Capitalization issue: `BERT` in title `BEiT: BERT Pre-Training of Image Transformers...` should likely be in braces.
+- Capitalization issue: `CVPR` in title `2005 IEEE Computer Society Conference on Computer Vision and...` should likely be in braces.
+- Capitalization issue: `CVPR` in title `Proceedings of the IEEE/CVF Conference on Computer Vision an...` should likely be in braces.
+- Capitalization issue: `GPT` in title `GPT-5...` should likely be in braces.
+- Capitalization issue: `ICML` in title `ICML 2021 Workshop on Unsupervised Reinforcement Learning...` should likely be in braces.
+- Capitalization issue: `VAE` in title `EQ-VAE: Equivariance Regularized Latent Space for Improved G...` should likely be in braces.
+- Capitalization issue: `VAE` in title `REPA-E: Unlocking VAE for End-to-End Tuning with Latent Diff...` should likely be in braces.
+- Capitalization issue: `transformer` in title `Ddt: Decoupled diffusion transformer...` should likely be in braces.
+- Capitalization issue: `transformer` in title `Glu variants improve transformer...` should likely be in braces.
+- Capitalization issue: `transformer` in title `Masked diffusion transformer is a strong image synthesizer...` should likely be in braces.
+- Capitalization issue: `transformer` in title `Maskgit: Masked generative image transformer...` should likely be in braces.
+- Capitalization issue: `transformer` in title `Pixart-alpha: Fast training of diffusion transformer for pho...` should likely be in braces.
+- Capitalization issue: `transformer` in title `Roformer: Enhanced transformer with rotary position embeddin...` should likely be in braces.
+- Capitalization issue: `transformer` in title `Sd-dit: Unleashing the power of self-supervised discriminati...` should likely be in braces.
+- Capitalization issue: `transformers` in title `An empirical study of training self-supervised vision transf...` should likely be in braces.
+- Capitalization issue: `transformers` in title `Fast training of diffusion models with masked transformers...` should likely be in braces.
+- Capitalization issue: `transformers` in title `GenTron: Diffusion transformers for image and video generati...` should likely be in braces.
+- Capitalization issue: `transformers` in title `Scalable diffusion models with transformers...` should likely be in braces.
+- Capitalization issue: `transformers` in title `Scaling rectified flow transformers for high-resolution imag...` should likely be in braces.
+- Capitalization issue: `transformers` in title `Sit: Exploring flow and diffusion-based generative models wi...` should likely be in braces.
+- Capitalization issue: `transformers` in title `Taming transformers for high-resolution image synthesis...` should likely be in braces.
+- Capitalization issue: `transformers` in title `Vdt: General-purpose video diffusion transformers via mask m...` should likely be in braces.
+- Outdated arXiv entry: `Chen2025MaskedAA` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `Wu2025GeometryFM` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `adam` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `adamw` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `albergo2023buildingnormalizingflowsstochastic` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `ardit` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `beit` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `black2023zeroshotroboticmanipulationpretrained` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `bolya2025PerceptionEncoder` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `cen2025worldvlaautoregressiveactionworld` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `cfg_interval` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `cfg` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `cheang2024gr2generativevideolanguageactionmodel` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `chen2023importance` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `chen2025ditairrevisitingefficiencydiffusion` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `cho2025PerceptionLM` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `da3` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `dart` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `ddt` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `deco` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `diffusability` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `dinov3` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `dispersiveloss` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `du2023learninguniversalpoliciestextguided` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `elizalde2022claplearningaudioconcepts` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `emotionbias_fad` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `eqvae` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `evvae` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `falck2025fourierspaceperspectivediffusion` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `fan2025scaling` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `fasterdit` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `fuest2024diffusion` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `gentron` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `haghighi2025layersyncselfaligningintermediatelayers` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `heinrich2025radiov25improvedbaselinesagglomerative` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `hu2025videopredictionpolicygeneralist` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `instancenorm` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `jit` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `kang2023gigagan` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `kang2024distilling` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `kilgour2019frechetaudiodistancemetric` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `kingma2023understandingdiffusionobjectiveselbo` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `kouzelis2025boosting` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `labs2025flux` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `langtitok` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `ldit` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2024aligning` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2024mertacousticmusicunderstanding` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2025back` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2025unifiedvideoactionmodel` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `liang2025videogeneratorsrobotpolicies` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `liu2022flow` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `llamagen` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `lumina` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `magvitv2` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `maskdit` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `mdtv2` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `meanflow` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `mocov2` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `moralesbrotons2024exponentialmovingaverageweights` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `mu_disc` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `oxe` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `pai2025mimicvideovideoactionmodelsgeneralizable` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `pixart-alpha` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `pixelflow` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `pixnerd` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `rae` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `ranzinger2025featsharpvisionmodelfeatures` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `ravi2024sam2` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `repa` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `repae` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `rombach2022highresolutionimagesynthesislatent` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `rt1` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `shazeer2020glu` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `siglip2` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `simpler` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `sra` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `stylegan3t` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `stylegant` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `tatitok` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `tian2024predictiveinversedynamicsmodels` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `ulyanov2016instance` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `unterthiner2018towards` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `vae` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `vgg` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `videomae` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `videorepa` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `videovla` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `vtp` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wan2025` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wang2025repa` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wu2023unleashinglargescalevideogenerative` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wu2024largescalecontrastivelanguageaudiopretraining` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wu2025geometry` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `ye2026worldactionmodelszeroshot` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zaidi2023` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zeng2025flowmatchinglownoiseregime` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhang2025videorepa` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
 
-## Key Findings
-
-### 1. Bibliography File Management
-- **Redundant String Definitions**: The file `example_paper.bib` contains duplicate `@String` definitions for several major venues (e.g., PAMI, IJCV, CVPR, ICCV, ECCV, NIPS, ICLR). For instance, `PAMI` is defined first as `IEEE Trans. Pattern Anal. Mach. Intell.` and then later overwritten as `IEEE TPAMI`. This redundancy should be cleaned up to ensure consistent conference naming.
-- **Incomplete Author Fields**: The entry for `oxe` (Open X-Embodiment) appears to have a truncated author list ending in `... [truncated]`, which will cause BibTeX parsing errors and incorrect rendering in the final bibliography.
-
-### 2. Missing Capitalization Protection
-Many entries lack curly brace `{}` protection for acronyms, model names, and proper nouns in their titles. This is particularly important for the ICML bibliography style:
-- **Model Names**: `CLIP`, `DINOv2`, `DIT`, `REPA`, `SDXL`, `SD3`, `FLUX`, `Lumina`, `Sora`, `RT-1`, `GR-2`, `VideoVLA`.
-- **Acronyms and Benchmarks**: `MAE`, `VAE`, `GAN`, `FID`, `IS`, `CKA`, `LPIPS`, `ImageNet` (often cited as `Imagenet`), `FMA`, `CLAP`, `MERT`.
-- **Title Words**: `Adam`, `AdamW`, `Attention` (in "Attention is all you need"), `Score-Based`.
-
-### 3. Outdated arXiv Citations
-Several foundational works are cited as arXiv preprints despite having been published in major peer-reviewed venues for years:
-- `adam` (Kingma & Ba, 2014) was published at **ICLR 2015**.
-- `adamw` (Loshchilov, 2017) was published at **ICLR 2019**.
-- `vae` (Kingma, 2013) was published at **ICLR 2014**.
-- `cfg` (Ho & Salimans, 2022) is a foundational work in diffusion guidance and should be cited properly (e.g., NeurIPS 2022 workshop or similar).
-- `meanflow` (Geng et al., 2025) likely has a formal publication venue by mid-2026.
-
-### 4. Formatting Inconsistencies
-- **Conference Naming**: There is an inconsistent mix of capitalization and formatting for the "International Conference on Machine Learning" across different entries (e.g., `clip` vs. `sd3` vs. `bn`).
-- **Organization and Publisher Fields**: Some entries include `organization={PMLR}` or `publisher={ACM Press}`, while others omit them for the same venue.
-
-## Conclusion
-While the bibliography is extensive and covers most relevant work, it requires significant curation to meet professional publication standards. Protecting case-sensitive terms and updating foundational preprints to their peer-reviewed versions are the most critical recommended actions.
+## Citation Issues (.tex)
+- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 49, '\\citep': 53, '\\citet': 5}
