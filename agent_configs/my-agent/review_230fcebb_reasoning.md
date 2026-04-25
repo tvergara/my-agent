@@ -1,22 +1,29 @@
-# Bibliographic Audit: Why Depth Matters in Parallelizable Sequence Models (230fcebb)
+# Reasoning for Paper 230fcebb: Why Depth Matters in Parallelizable Sequence Models: A Lie Algebraic View
 
-I have conducted a detailed bibliographic audit of the paper "Why Depth Matters in Parallelizable Sequence Models".
-The following issues were identified in the bibliography (`main.bib`):
+I have reviewed the bibliography file `main.bib` for the paper `230fcebb` and identified several citation formatting issues, specifically regarding capitalization preservation in BibTeX titles.
 
-### 1. Duplicate @STRING Definitions
-The bibliography file contains numerous redundant `@STRING` definitions for major venues and journals, which will trigger BibTeX warnings. Examples include duplicate definitions for `PAMI`, `ACL`, `IWSLT`, `COLING`, `EACL`, `NAACL`, `EMNLP`, `JMachLearRes`, `confCVPR`, `confICASSP`, `confICML`, `confNIPS`, and others. These should be consolidated into a single set of definitions.
+## Observations
 
-### 2. Missing Capitalization Protection (Curly Braces)
-Proper nouns and technical acronyms lack curly brace `{}` protection in several titles, which will result in incorrect lowercasing under standard bibliography styles:
-- **Proper Nouns**: `Lie` (appears in many entries, e.g., `Lie groups`, `Lie algebras`, `Lie-group methods`), `Magnus` (`Magnus expansion`, `Magnus expansions and beyond`), `Krohn-Rhodes`, `Kaluzhnin-Krasner`.
-- **Acronyms**: `CDE` (`Structured Linear CDEs`), `Transformer` (`transformer world models`).
+The bibliography contains numerous references to mathematical concepts and proper names that require brace protection `{...}` to maintain correct capitalization in many BibTeX styles.
 
-### 3. Outdated Citations
-The following entries are cited as preprints but have been formally published:
-- **Symplectic Actions and Central Extensions** (`beckett2022symplectic`): Cited as `arXiv 2022`. Should be updated to **Journal of Symplectic Geometry (2024)**.
-- **Scalable Diffusion Models with Transformers** (referenced in some bib files but check this specific one): I previously identified DiT as ICCV 2023.
+### Proper Names Missing Braces:
 
-### 4. Author Name Formatting
-- **De Kerf** and **Ten Kroode**: In the entry `PhysicsExtension`, the authors are listed as `E.A. {De Kerf}` and `A.P.E. {Ten Kroode}`. While curly braces help, standard BibTeX formatting for "von" parts can be tricky and should be verified for consistency with the house style.
+1.  **Lie**: `title={Lie groups, Lie algebras, and representations...}`, `title={...nildecomposable Lie algebras}`, `title={...Lie algebras of vector fields...}`, `title={...d'alg\backslashebres de Lie}`, `title={...The lie brackets make a difference}`. "Lie" refers to Sophus Lie and should be braced `{Lie}`.
+2.  **Magnus**: `title={...its Magnus expansion}`, `title={...generalized Magnus expansions}`, `title={The Magnus expansion...}`.
+3.  **Krohn-Rhodes**: `title={On the Krohn-Rhodes cascaded decomposition theorem}`. Should be braced as `{Krohn}-{Rhodes}`.
+4.  **Amir Pnueli**: `booktitle={...Essays in Memory of Amir Pnueli}`.
+5.  **Kaluzhnin-Krasner**: `title={...Kaluzhnin-Krasner embedding...}`, `title={A universal Kaluzhnin--Krasner embedding theorem}`.
+6.  **Hopf**: `title={An introduction to Hopf algebras}`.
+7.  **Lyndon**: `title={Lyndon words, free algebras...}`, `title={Affine standard Lyndon words...}`.
 
-These corrections will improve the scholarly accuracy and professional presentation of the manuscript.
+### Acronyms and Project Names Missing Braces:
+
+1.  **RWKV**: `title={{RWKV}-7 ''Goose''...}` (Partial protection seen, but inconsistent).
+2.  **SSM**: `title={The Expressive Limits of Diagonal {SSM}s...}` (Partial protection seen).
+3.  **HMM**: `title={On limitation of transformer for learning {HMM}s}` (Partial protection seen).
+4.  **CDE**: `title={Structured Linear CDEs: ...}`.
+5.  **Kimi**: `title={Kimi linear: An expressive, efficient attention architecture}`.
+
+## Conclusion
+
+The bibliography uses some bracing for acronyms but is inconsistent, especially for mathematical proper names like "Lie" and "Magnus". I recommend a comprehensive review of the `.bib` file to ensure all such terms are protected.
