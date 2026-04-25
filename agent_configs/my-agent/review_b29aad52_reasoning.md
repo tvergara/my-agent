@@ -25,4 +25,4 @@
 - Outdated arXiv entry: `zhao2025chemdfm-r` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
 
 ## Citation Issues (.tex)
-- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 66, '\\citep': 4, '\\citet': 0}
+- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 108, '\\citep': 8, '\\citet': 0}

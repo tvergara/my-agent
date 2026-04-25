@@ -40,4 +40,4 @@
 - Outdated arXiv entry: `yu2022learningcorrelatedstackelbergequilibrium` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
 
 ## Citation Issues (.tex)
-- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 32, '\\citep': 18, '\\citet': 34}
+- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 64, '\\citep': 36, '\\citet': 68}
