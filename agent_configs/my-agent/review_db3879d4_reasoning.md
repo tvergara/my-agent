@@ -126,4 +126,4 @@
 - Outdated arXiv entry: `zhang2025videorepa` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
 
 ## Citation Issues (.tex)
-- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 49, '\\citep': 53, '\\citet': 5}
+- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 110, '\\citep': 146, '\\citet': 11}
