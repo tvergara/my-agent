@@ -1,35 +1,33 @@
-# Bibliographic Audit: Learning Approximate Nash Equilibria (c993ba35)
+# Bibliography Audit for Paper c993ba35
 
-I have conducted a thorough audit of the bibliographic references in `main.bib` for the paper "Learning Approximate Nash Equilibria in Cooperative Multi-Agent Reinforcement Learning via Mean-Field Subsampling" (ID: `c993ba35-65e0-4290-a66a-c128e33410f4`).
+I have performed a systematic review of the bibliography for this submission. While the paper covers a broad range of related work in multi-agent reinforcement learning and game theory, there are several technical issues in the reference list that require attention to meet professional academic standards for ICML:
 
-## Methodology
-I parsed the `main.bib` file and checked for:
-1.  **Capitalization Protection Workarounds**: Identifying non-standard ways of protecting title capitalization.
-2.  **Venue Consistency**: Checking for uniform naming and capitalization of conferences like ICML, NeurIPS, and ICRA.
-3.  **BibTeX Style Heterogeneity**: Identifying inconsistencies in the fields provided across different entries.
-4.  **Proper Noun Integrity**: Ensuring terms like `MARVEL`, `Nash`, and `Markov` are correctly handled.
+### 1. Missing Capitalization Protection for Acronyms and Proper Nouns
+Many entries lack curly brace `{}` protection for acronyms and proper nouns in their titles. Without this protection, these terms will be incorrectly rendered as lowercase in many bibliography styles (including ICML/PMLR).
+*   **Acronyms**: `TD-learning`, `Q-learning`, `MARL`, `MDP`, `Nash`, `UAV`, `POMDPs`, `FedRL`, `PPAD`, `GAPS`, `GMFC`, `ACC0`.
+*   **Proper Nouns**: `Stackelberg`, `Markov`, `Bellman`, `Thompson`, `Blackwell`, `Polyak`, `Lojasiewicz`, `Lemke-Howson`, `Sperner`.
+*   **Examples**:
+    *   `arefizadeh2024characterizationspotentialordinalpotential`: `{{On Characterizations of Potential and Ordinal Potential Games}}` should be `{{On Characterizations of Potential and Ordinal Potential Games}}`.
+    *   `chen2021finite`: `{{Finite-sample analysis of off-policy TD-learning via generalized bellman operators}}` - `TD-learning` and `bellman` should be protected.
 
-## Key Findings
+### 2. Outdated arXiv Citations
+Several works are cited as arXiv preprints despite having been formally published in major venues by 2026:
+*   **`lin2022online`**: Cited as `arXiv:2210.12320` (2022). This work was published as "Online Adaptive Policy Selection in Time-Varying Systems: No-Regret via Contractive Perturbations" in **NeurIPS 2023** (which is also cited as `NEURIPS2023_a7a7180f`, see below).
+*   **`lazarsfeld2025fastfurioussymmetriclearning`**: Cited as `arXiv:2506.13086`. Recommended update to its 2025/2026 conference version if available.
+*   **`guo2025markovalphapotentialgames`**: Cited as `arXiv:2305.12553`.
+*   **`jin2021v`**: Cited as `arXiv:2110.14555`. This was published in **NeurIPS 2021** (or a similar venue).
 
-### 1. Non-Standard Capitalization Protection
-The bibliography uses highly inconsistent and sometimes redundant methods to protect capitalization in titles:
-- `aina2025deepreinforcementlearningmultiagent`: Uses individual letter protection `{R}einforcement {L}earning`, which is unconventional.
-- `chiun2025marvelmultiagentreinforcementlearning`: Uses a mix of double braces and individual letter protection `{{MARVEL}: {M}ulti-{A}gent ...}`.
-- `craven2005karlin`: Uses double braces for the entire title `{{Karlin's conjecture and a question of P{\'o}lya}}`.
+### 3. Redundant/Duplicate Entries
+The `main.bib` file contains duplicate entries for the same work, which can lead to inconsistencies and project bloat:
+*   **`lin2022online`** and **`NEURIPS2023_a7a7180f`**: Both refer to the same paper on online adaptive policy selection.
+*   **`Sutton_McAllester_Singh_Mansour_1999`** and **`NIPS1999_464d828b`**: Duplicate entries for the foundational policy gradient paper.
+*   **`anand2024efficientreinforcementlearningglobal`** and **`anand2025meanfield`**: These appear to be related or duplicate versions of the same research trajectory.
 
-### 2. Inconsistent Venue Capitalization
-Major conferences are cited with varying capitalization:
-- **ICML**: `ding2022independent` uses `International Conference on Machine Learning`, while `fujimoto2019off` uses `International conference on machine learning`.
-- **IEEE Venues**: `Daskalakis_2014` and `chiun2025marvelmultiagentreinforcementlearning` use title case for IEEE symposia/conferences, which is consistent, but they differ in whether they include the series abbreviation (e.g., `(ICRA)`).
+### 4. Inconsistent Venue Naming
+Conference names are formatted inconsistently throughout the bibliography:
+*   Some use full names: `International Conference on Machine Learning`.
+*   Some use abbreviated/series names: `Proceedings of Machine Learning Research`.
+*   Some use specialized formats: `Symposium on Algorithmic Game Theory (SAGT) 2016`.
+Standardizing these to a consistent format (e.g., "Proceedings of the $N$-th International Conference on Machine Learning (ICML)") would improve professional appearance.
 
-### 3. Inconsistent Field Usage
-Entries sourced from different databases (e.g., ACM, IEEE, ArXiv) retain their source-specific fields, leading to a heterogeneous bibliography:
-- Some entries include `isbn`, `address`, `location`, and `abstract` (e.g., `doi:10.1137/1.9781611976465.84`).
-- Others include `keywords`, `doi`, and `publisher` (e.g., `lv2024localinformationaggregationbased`).
-- ArXiv entries vary between using `@article` with `journal={arXiv preprint ...}` and `@misc` with `eprint`.
-
-### 4. Handling of Proper Nouns
-While `Nash` is generally capitalized, terms like `Markov` and `Nash` should be consistently protected (e.g., `{Nash}`) to ensure they are not lowercased by the `icml2026.bst` style.
-
-## Conclusion
-A systematic pass to standardize the BibTeX style and title protection mechanism is recommended to ensure a uniform and professional appearance in the final publication.
+Standardizing these references will enhance the overall scholarly quality and professional presentation of the manuscript.
