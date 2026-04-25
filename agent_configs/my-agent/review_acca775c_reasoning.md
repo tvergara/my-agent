@@ -7,24 +7,22 @@
 ## Audit Findings
 
 ### 1. Outdated arXiv Citations
-Many foundational works are cited as arXiv preprints despite being published in major venues:
-- `li2024dclm` (DataComp-LM): Published at **NeurIPS 2024**.
-- `muennighoff2024olmoe` (OLMoE): Published at **NeurIPS 2024**.
-- `raposo2024mixture` (Mixture-of-Depths): Published at **ICML 2024**.
-- `shazeer2017outrageously` (Sparsely-gated MoE): Published at **ICLR 2017**.
-- `kilian2026datasparsity`: Published at **ICLR 2026**.
+Several works are cited as arXiv preprints despite being formally published in peer-reviewed venues:
+- **`li2024dclm`** (DataComp-LM): Published at **NeurIPS 2024** (Datasets and Benchmarks Track).
+- **`muennighoff2024olmoe`** (OLMoE): Published at **ICLR 2025** (Oral).
+- **`shazeer2017outrageously`** (Sparsely-gated MoE): Published at **ICLR 2017**.
+- **`wang2024auxiliarylossfreeloadbalancingstrategy`**: Published at **ICLR 2025**.
+- **`ludziejewski2024scaling`**: Already correctly cited as **ICML 2024**.
 
 ### 2. Missing Capitalization Protection (Curly Braces)
-There is a pervasive lack of curly brace `{}` protection for technical acronyms and model names in titles, which will result in incorrect lowercasing in many bibliography styles:
-- **Technical Acronyms**: `MoE`, `LLM`, `LLMs`, `RL`, `PPO`, `GAE`, `CoT`, `RMSNorm`, `RoPE`, `GQA`, `BERT`, `SOTA`.
-- **Model Names**: `DeepSeekMoE`, `DeepSeek-V3`, `OLMoE`, `nanoGPT`, `FineWeb`, `Llama 2`, `Gemma 2`, `Qwen3`, `Moonlight`, `BLIP-2`, `LLaVA`.
-- **Specific Methods**: `Expert Choice`, `Ternary Expert Choice`, `AdaMoE`, `TC-MoE`, `XMoE`, `HMoE`, `ST-MoE`, `SeqTopK`.
+Technical acronyms and model names in titles lack curly brace `{}` protection, which will likely cause incorrect lowercasing in common bibliography styles:
+- **Acronyms**: `{OLMoE}`, `{DCLM}`, `{MoE}`, `{LLM}`, `{LLMs}`, `{CE}`, `{EMA}`.
+- **Model Names**: `{S}witch {T}ransformers`, `{G}emma 2`, `{L}lama 2`, `{D}eep{S}eek-V3`.
+- **Note**: `lepikhin2021gshard` uses redundant escaping `{\{}GS{\}}hard`, which should be simplified to `{GShard}` or `{GS}hard`.
 
-### 3. Metadata and Syntax Errors
-- **`lepikhin2021gshard`**: The title contains redundant escaping `{\{}GS{\}}hard` which may lead to incorrect rendering of the method name "GShard".
-- **`ni2025openmoe2`**: The author list is incomplete (`Ni, Jinjie and team`).
-- **`jordan2024muon`**: Lists a blog post but could be updated with more formal metadata if the method has since been published or integrated into a framework.
-- **`loshchilov2019adamw`**: Ensure consistent naming for `AdamW` (protected).
+### 3. Metadata Completeness and Style
+- **`ni2025openmoe2`**: The author list is truncated to `Ni, Jinjie and team`. A more complete author list should be provided if available.
+- **Inconsistent journal fields**: Some entries use `journal={arXiv preprint arXiv:...}` while others use `archivePrefix={arXiv}, eprint={...}`. Standardizing on one format (preferably the latter for consistency with modern BibTeX managers) is recommended.
 
 ## Conclusion
-The bibliography requires significant cleanup, specifically updating preprints to their formal versions and ensuring all technical terms have proper brace protection. Correcting the redundant escaping in the `gshard` entry and completing author lists is also necessary for academic rigor.
+The bibliography is generally comprehensive but requires updates to formal publication venues for several 2024 and 2025 papers. Additionally, implementing widespread curly brace protection for proper nouns and acronyms will ensure consistent capitalization across different citation styles.
