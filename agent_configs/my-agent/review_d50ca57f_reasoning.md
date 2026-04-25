@@ -1,0 +1,59 @@
+# Audit Results for Paper d50ca57f
+
+## Bibliography Issues (.bib)
+- Capitalization issue: `AAAI` in title `Proceedings of the AAAI Conference on Artificial Intelligenc...` should likely be in braces.
+- Capitalization issue: `Attention` in title `Attention is all you need...` should likely be in braces.
+- Capitalization issue: `Attention` in title `Sinkformers: Transformers with Doubly Stochastic Attention...` should likely be in braces.
+- Capitalization issue: `CVPR` in title `2009 IEEE Conference on Computer Vision and Pattern Recognit...` should likely be in braces.
+- Capitalization issue: `Drosophila` in title `A characterization of the effects of Dpp signaling on cell g...` should likely be in braces.
+- Capitalization issue: `Drosophila` in title `Cell cycling and patterned cell proliferation in the wing pr...` should likely be in braces.
+- Capitalization issue: `GAN` in title `GAN and VAE from an optimal transport point of view...` should likely be in braces.
+- Capitalization issue: `Gaussian` in title `Alignment of spatial genomics data using deep Gaussian proce...` should likely be in braces.
+- Capitalization issue: `Gaussian` in title `Hidden integrality of SDP relaxations for sub-Gaussian mixtu...` should likely be in braces.
+- Capitalization issue: `ICML` in title `ICML Workshop on New Frontiers in Learning, Control, and Dyn...` should likely be in braces.
+- Capitalization issue: `ICML` in title `ICML...` should likely be in braces.
+- Capitalization issue: `NeurIPS` in title `NeurIPS 2021 Workshop on Optimal Transport and Machine Learn...` should likely be in braces.
+- Capitalization issue: `NeurIPS` in title `NeurIPS...` should likely be in braces.
+- Capitalization issue: `VAE` in title `GAN and VAE from an optimal transport point of view...` should likely be in braces.
+- Capitalization issue: `Wasserstein` in title `Do Neural Optimal Transport Solvers Work? A Continuous Wasse...` should likely be in braces.
+- Capitalization issue: `Wasserstein` in title `Gromov-Wasserstein alignment of word embedding spaces...` should likely be in braces.
+- Capitalization issue: `Wasserstein` in title `Gromov-Wasserstein optimal transport to align single-cell mu...` should likely be in braces.
+- Capitalization issue: `Wasserstein` in title `Information geometry connecting Wasserstein distance and Kul...` should likely be in braces.
+- Capitalization issue: `Wasserstein` in title `Learning cell fate landscapes from spatial transcriptomics u...` should likely be in braces.
+- Capitalization issue: `Wasserstein` in title `Relax and Merge: A Simple Yet Effective Framework for Solvin...` should likely be in braces.
+- Capitalization issue: `Wasserstein` in title `Semi-relaxed Gromov-Wasserstein divergence for graphs classi...` should likely be in braces.
+- Capitalization issue: `Wasserstein` in title `Sharp asymptotic and finite-sample rates of convergence of e...` should likely be in braces.
+- Capitalization issue: `Wasserstein` in title `Uncoupled isotonic regression via minimum Wasserstein deconv...` should likely be in braces.
+- Capitalization issue: `Wasserstein` in title `Wasserstein generative adversarial networks...` should likely be in braces.
+- Duplicate key found: `dong2023partial`
+- Duplicate key found: `staahl2016visualization`
+- Outdated arXiv entry: `Loera2013CombinatoricsAG` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `Sejourne:2022` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `alvarez2018gromov` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `asano2019self` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `baradat2021regularized` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `chewi2024statistical` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `cuturi2022optimal` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `finlay2020trainneuralodeworld` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `fukunaga2021fast` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `fukunaga2022convergence` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `genevay2017gan` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `geshkovski2023mathematical` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `halmos2025hierarchical` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `kassraie2024progressive` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `kingma2018glowgenerativeflowinvertible` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `lavenant2021towards` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `lei2023relation` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `leonard2013survey` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `liu2022sparsity` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `manole2024backgroundmodelingdoublehiggs` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `montesuma2023recent` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `oberman2015efficient` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `oquab2023` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `salimans2018improving` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `scetbon2023unbalanced` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `song2024relax` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhuang2023statistically` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+
+## Citation Issues (.tex)
+- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 87, '\\citep': 92, '\\citet': 1}
