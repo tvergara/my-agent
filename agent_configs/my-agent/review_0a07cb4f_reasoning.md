@@ -1,22 +1,24 @@
-# Audit Results for Paper 0a07cb4f
+# Bibliographic Audit: $V_1$ (0a07cb4f)
 
-## Bibliography Issues (.bib)
+I have conducted a systematic audit of the bibliography (`references.bib`) for the $V_1$ submission. The following issues were identified:
 
-### Missing Capitalization Protection
-Proper nouns and acronyms in titles should be protected with curly braces `{}` to prevent incorrect lowercasing by BibTeX styles. The following entries are affected:
-- `LLM` in titles of: `snell2024scalingllmtesttimecompute`, `madaan2025rethinkingthinkingtokensllms`, `DeepSeek-R1`, `Math-Shepherd`, `Evalchemy`.
-- `llm` (lowercase in source) in `bansal2024smaller`: `title={Smaller, weaker, yet better: Training llm reasoners via compute-optimal sampling}`. Should be `{LLM}`.
-- `GPT` in `nakano2021webgpt` (`Webgpt`) and `hurst2024gpt`.
-- `DeepSeek-R1` in `deepseekai2025deepseekr1incentivizingreasoningcapability`.
-- `AIME` in `2025aime` and `2024aime`.
+### 1. Missing Capitalization Protection (Brace Protection)
+Several technical acronyms and proper nouns are not protected by curly braces in their titles, which will result in incorrect lowercasing (e.g., "llm" instead of "LLM") under the ICML bibliography style:
+- `LLM` (appears in: `snell2024scalingllmtesttimecompute`, `madaan2025rethinkingthinkingtokensllms`, `bansal2024smaller`, `DeepSeek-R1`, `Math-Shepherd`, `Evalchemy`)
+- `GPT` (`Webgpt`, `hurst2024gpt`)
+- `AIME` (`2025aime`, `2024aime`)
+- `RL` (appears in: `kazemnejad2024vineppounlockingrlpotential`)
 
-### Outdated arXiv Entries
-The following papers have been formally published and their citations should be updated:
-- `snell2024scalingllmtesttimecompute` (arXiv:2408.03314) -> **ICLR 2025 (Oral)**.
-- `hendrycks2021measuring` (arXiv:2103.03874) -> **NeurIPS 2021**.
-- `hoffmann2022trainingcomputeoptimallargelanguage` (arXiv:2203.15556) -> **NeurIPS 2022**.
-- `kazemnejad2024vineppounlockingrlpotential` (arXiv:2410.01679) -> **ICLR 2025**.
+### 2. Outdated arXiv Citations
+Multiple entries are cited as arXiv preprints despite having been formally published in major venues:
+- **DeepSeek-R1** (`deepseekai2025deepseekr1incentivizingreasoningcapability`): Cited as `arXiv 2025`. Should be updated to **Nature**, Vol 645, Sep 2025.
+- **s1** (`muennighoff2025s1simpletesttimescaling`): Cited as `arXiv 2025`. Should be updated to **EMNLP 2025**.
+- **Scaling LLM Test-Time Compute Optimally** (`snell2024scalingllmtesttimecompute`): Cited as `arXiv 2024`. Should be updated to **ICLR 2025 (Oral)**.
+- **VinePPO** (`kazemnejad2024vineppounlockingrlpotential`): Cited as `arXiv 2024`. Should be updated to **ICLR 2025**.
+- **Chinchilla Scaling Laws** (`hoffmann2022trainingcomputeoptimallargelanguage`): Cited as `arXiv 2022`. Should be updated to **NeurIPS 2022**.
+- **MMLU** (`hendrycks2021measuring`): Cited as `arXiv 2021`. Should be updated to **NeurIPS 2021**.
 
-## Citation Style Issues (.tex)
-- Inconsistent citation style: The manuscript mix standard `\cite` with natbib commands (`\citep`/`\citet`).
-- Counts: `\cite`: 2, `\citep`: 61, `\citet`: 11. Consistent use of natbib is recommended.
+### 3. Citation Style Inconsistency
+- The LaTeX source uses both the standard `\cite` command and `natbib` commands (`\citep`/`\citet`). Consistent use of `natbib` is recommended for ICML submissions.
+
+Addressing these corrections will ensure the manuscript meets professional academic standards and reflects the current state of the literature.
