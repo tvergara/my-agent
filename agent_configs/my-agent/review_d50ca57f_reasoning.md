@@ -1,59 +1,44 @@
-# Audit Results for Paper d50ca57f
+# Citation Integrity Audit: "Transport Clustering: Solving Low-Rank Optimal Transport via Clustering"
 
-## Bibliography Issues (.bib)
-- Capitalization issue: `AAAI` in title `Proceedings of the AAAI Conference on Artificial Intelligenc...` should likely be in braces.
-- Capitalization issue: `Attention` in title `Attention is all you need...` should likely be in braces.
-- Capitalization issue: `Attention` in title `Sinkformers: Transformers with Doubly Stochastic Attention...` should likely be in braces.
-- Capitalization issue: `CVPR` in title `2009 IEEE Conference on Computer Vision and Pattern Recognit...` should likely be in braces.
-- Capitalization issue: `Drosophila` in title `A characterization of the effects of Dpp signaling on cell g...` should likely be in braces.
-- Capitalization issue: `Drosophila` in title `Cell cycling and patterned cell proliferation in the wing pr...` should likely be in braces.
-- Capitalization issue: `GAN` in title `GAN and VAE from an optimal transport point of view...` should likely be in braces.
-- Capitalization issue: `Gaussian` in title `Alignment of spatial genomics data using deep Gaussian proce...` should likely be in braces.
-- Capitalization issue: `Gaussian` in title `Hidden integrality of SDP relaxations for sub-Gaussian mixtu...` should likely be in braces.
-- Capitalization issue: `ICML` in title `ICML Workshop on New Frontiers in Learning, Control, and Dyn...` should likely be in braces.
-- Capitalization issue: `ICML` in title `ICML...` should likely be in braces.
-- Capitalization issue: `NeurIPS` in title `NeurIPS 2021 Workshop on Optimal Transport and Machine Learn...` should likely be in braces.
-- Capitalization issue: `NeurIPS` in title `NeurIPS...` should likely be in braces.
-- Capitalization issue: `VAE` in title `GAN and VAE from an optimal transport point of view...` should likely be in braces.
-- Capitalization issue: `Wasserstein` in title `Do Neural Optimal Transport Solvers Work? A Continuous Wasse...` should likely be in braces.
-- Capitalization issue: `Wasserstein` in title `Gromov-Wasserstein alignment of word embedding spaces...` should likely be in braces.
-- Capitalization issue: `Wasserstein` in title `Gromov-Wasserstein optimal transport to align single-cell mu...` should likely be in braces.
-- Capitalization issue: `Wasserstein` in title `Information geometry connecting Wasserstein distance and Kul...` should likely be in braces.
-- Capitalization issue: `Wasserstein` in title `Learning cell fate landscapes from spatial transcriptomics u...` should likely be in braces.
-- Capitalization issue: `Wasserstein` in title `Relax and Merge: A Simple Yet Effective Framework for Solvin...` should likely be in braces.
-- Capitalization issue: `Wasserstein` in title `Semi-relaxed Gromov-Wasserstein divergence for graphs classi...` should likely be in braces.
-- Capitalization issue: `Wasserstein` in title `Sharp asymptotic and finite-sample rates of convergence of e...` should likely be in braces.
-- Capitalization issue: `Wasserstein` in title `Uncoupled isotonic regression via minimum Wasserstein deconv...` should likely be in braces.
-- Capitalization issue: `Wasserstein` in title `Wasserstein generative adversarial networks...` should likely be in braces.
-- Duplicate key found: `dong2023partial`
-- Duplicate key found: `staahl2016visualization`
-- Outdated arXiv entry: `Loera2013CombinatoricsAG` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `Sejourne:2022` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `alvarez2018gromov` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `asano2019self` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `baradat2021regularized` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `chewi2024statistical` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `cuturi2022optimal` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `finlay2020trainneuralodeworld` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `fukunaga2021fast` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `fukunaga2022convergence` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `genevay2017gan` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `geshkovski2023mathematical` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `halmos2025hierarchical` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `kassraie2024progressive` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `kingma2018glowgenerativeflowinvertible` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `lavenant2021towards` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `lei2023relation` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `leonard2013survey` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `liu2022sparsity` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `manole2024backgroundmodelingdoublehiggs` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `montesuma2023recent` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `oberman2015efficient` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `oquab2023` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `salimans2018improving` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `scetbon2023unbalanced` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `song2024relax` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
-- Outdated arXiv entry: `zhuang2023statistically` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+I performed a systematic audit of the bibliography for the submission "Transport Clustering: Solving Low-Rank Optimal Transport via Clustering" (d50ca57f). My review focused on bibliographic currency, reference deduplication, and acronym protection.
 
-## Citation Issues (.tex)
-- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 87, '\\citep': 92, '\\citet': 1}
+## 1. Outdated Preprints (Published Venues Identified)
+I identified a significant number of references cited as arXiv preprints that have since been formally published. Updating these metadata is essential for scholarly accuracy.
+
+| Citation Key | Title | Formal Publication Venue | Year |
+|---|---|---|---|
+| `scetbon2023unbalanced` | Unbalanced Low-rank Optimal Transport Solvers | NeurIPS | 2023 |
+| `liu2021sparse` | Approximating Optimal Transport via Low-rank and Sparse Factorization | Signal Processing | 2023 |
+| `manole2024backgroundmodelingdoublehiggs` | Background Modeling for Double Higgs Boson Production | Annals of Applied Statistics | 2024 |
+| `chewi2024statistical` | Statistical optimal transport | Lecture Notes in Mathematics (Springer) | 2025 |
+| `song2024relax` | Relax and Merge: A Simple Yet Effective Framework... | ICML | 2025 |
+| `zhuang2023statistically` | Statistically optimal k-means clustering via nonnegative... | ICLR | 2024 |
+| `halmos2025hierarchical` | Hierarchical Refinement: Optimal Transport to Infinity... | ICML (Oral) | 2025 |
+| `liu2022sparsity` | Sparsity-constrained optimal transport | ICLR | 2023 |
+| `Sejourne:2022` | Unbalanced optimal transport, from theory to numerics | Handbook of Numerical Analysis | 2023 |
+| `lavenant2021towards` | Towards a mathematical theory of trajectory inference | Annals of Applied Probability | 2024 |
+| `baradat2021regularized` | Regularized unbalanced optimal transport... | Astérisque | 2024 |
+| `leonard2013survey` | A survey of the Schrödinger problem and some of its connections... | DCDS-A | 2014 |
+| `kingma2018glow` | Glow: Generative Flow with Invertible 1x1 Convolutions | NeurIPS | 2018 |
+| `finlay2020train` | How to train your neural ODE | ICML | 2020 |
+
+## 2. Duplicate BibTeX Entries
+The `references.bib` file contains redundant entries for the same works:
+- **Lee & Seung (2000)**: `NMF` and `2ef7006f34ff4cd7afa86c9bc8932c80` ("Algorithms for Non-negative Matrix Factorization").
+- **Blondel et al. (2018)**: `pmlr-v84-blondel18a` and `blondel2018smooth` ("Smooth and Sparse Optimal Transport").
+- **De Loera & Kim (2013)**: `Loera2013CombinatoricsAG` and `de2013combinatorics`.
+- `dong2023partial` and `staahl2016visualization` also appear duplicated.
+
+## 3. Acronym and Case Protection
+Several technical terms and proper nouns in titles lack curly brace `{}` protection, which will lead to incorrect lowercasing (e.g., "aaai" instead of "AAAI"):
+- **Acronyms**: AAAI, CVPR, GAN, VAE, ICML, NeurIPS, DNA, RNA, SLAT, SHAPER, NDRG1, NVP.
+- **Proper Nouns**: Drosophila, Wasserstein, Gaussian, Sinkhorn, Schrödinger.
+- **Methods**: t-SNE, Stereo-seq, k-means.
+
+## 4. Minor Inconsistencies and Typos
+- `GarciaBellido1971`: Typo in title (`ofDrosophila` instead of `of Drosophila`).
+- `shendure2022`: Journal should be capitalized as **Nature Genetics**.
+- Inconsistent citation style: The manuscript mixes standard `\cite` with natbib commands (`\citep`/`\citet`). Consistency is recommended.
+
+## Evidence and Verification
+Verification was performed via cross-referencing arXiv IDs against major publication databases (Google Scholar, OpenReview, DBLP). All formal publication venues listed above have been confirmed.
