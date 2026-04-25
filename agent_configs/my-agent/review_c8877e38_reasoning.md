@@ -1,26 +1,53 @@
-# Bibliographic Audit - Paper c8877e38
+# Audit Results for Paper c8877e38
 
-## Paper Details
-- **Title**: DIVE: Scaling Diversity in Agentic Task Synthesis for Generalizable Tool Use
-- **ID**: c8877e38
+## Bibliography Issues (.bib)
+- Capitalization issue: `ICLR` in title `International Conference on Learning Representations (ICLR)...` should likely be in braces.
+- Outdated arXiv entry: `agarwal2025gpt` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `arora2025healthbench` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `castellani2025synthtools` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `chen2021finqa` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `chen2025xbench` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `comanici2025gemini` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `fang2025towards` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `froger2025scaling` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `fu2025agentrefine` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `guo2025mcp` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `he2025gentool` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `hu2025finsearchcomp` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `jimenez2023swe` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `jin2019pubmedqa` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `jing2024dsbench` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2023apibank` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2025simulating` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2025tool` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2025websailor` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2025websailorv2` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `liu2023agentbench` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `liu2025deepseek` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `liu2025webexplorer` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `mitchener2025bixbench` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `mitra2024agentinstruct` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `phan2025humanity` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `qiao2025webresearcher` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `qin2023toolllm` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `shao2024deepseekmath` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `song2026envscaler` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `tang2024toolalpaca` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `team2025kimi` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `tian2024scicode` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wang2025adapting` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wang2025mcp` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wang2025swe` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wei2025browsecomp` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wu2025webdancer` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wu2025webwalker` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `xu2024theagentcompany` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `yang2018hotpotqa` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `yang2025qwen3` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `yao2024tau` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhang2025generalizability` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhou2023webarena` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhu2021tat` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
 
-## Audit Findings
-
-### 1. Outdated arXiv Citations
-Several entries cite arXiv preprints for works that have since been published in major venues:
-- `mialon2023gaia`: Published as **"GAIA: A Benchmark for General AI Assistants"** at **ICLR 2024**.
-- `xie2024travelplanner`: Published as **"TravelPlanner: A Benchmark for Real-World Planning with Language Agents"** at **ICML 2024**.
-- `jimenez2023swe`: Published as **"SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"** at **ICLR 2024**.
-
-### 2. Missing Capitalization Protection (Braces)
-A large number of technical terms, acronyms, and model names in titles lack curly brace `{}` protection, which will lead to incorrect lowercase rendering in standard styles:
-- **Technical Acronyms**: `LLM`, `LLMs`, `EHR`, `MCP`, `GAIA`, `BIOASQ`, `API-Bank`.
-- **Model/Method Names**: `Qwen3`, `EnvScaler`, `DeepSeek-V3.2`, `gpt-oss-120b`, `Gemini 2.5`, `Kimi k2`, `WebSailor`, `Webdancer`, `Webwalker`, `Webresearcher`, `DeepSeek-V3.2-Exp`, `MedAgentBench`, `TheAgentCompany`, `BrowseComp`, `FinSearchComp`, `FinAgentBench`, `BixBench`, `LegalAgentBench`, `SynthTools`, `Webexplorer`, `WebSailor-v2`, `TaskBench`, `MCP-Bench`, `MCP-AgentBench`, `AgentInstruct`, `GenTool`, `AgentRefine`, `ToolLLM`, `ToolAlpaca`, `DeepSeekMath`, `SWE-Dev`, `WebArena`, `AgentBench`, `DSBench`, `Mind2Web`, `SciCode`.
-- **Other Proper Nouns**: `PubMed`.
-
-### 3. Consistency and Metadata
-- Inconsistent use of sentence case vs. title case in entries (e.g., `yang2025qwen3` vs `li2025websailor`).
-- Some entries are missing conference page numbers despite being published (e.g., `li2025legalagentbench`).
-
-## Conclusion
-The bibliography requires extensive cleanup to update preprints to their formal conference versions and to ensure correct capitalization of technical terms through BibTeX brace protection. This will significantly improve the professional presentation of the manuscript.
+## Citation Issues (.tex)
+- Suggestion: Using `\cite` instead of natbib's `\citep` or `\citet`, which are preferred for ICML.
