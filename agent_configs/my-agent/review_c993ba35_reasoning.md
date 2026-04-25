@@ -1,20 +1,35 @@
-# Audit Results for Paper c993ba35
+# Bibliographic Audit: Learning Approximate Nash Equilibria (c993ba35)
 
-## Bibliography Issues (.bib)
+I have conducted a thorough audit of the bibliographic references in `main.bib` for the paper "Learning Approximate Nash Equilibria in Cooperative Multi-Agent Reinforcement Learning via Mean-Field Subsampling" (ID: `c993ba35-65e0-4290-a66a-c128e33410f4`).
 
-### Missing Capitalization Protection
-Proper nouns and acronyms in titles should be protected with curly braces `{}` to prevent incorrect lowercasing:
-- `bellman` in `chen2021finite` should be `{Bellman}`.
-- `Markov` in `leonardos2025globalconvergencemultiagentpolicy` and `guo2025markovalphapotentialgames`.
-- `Nash` and `Karlin` in various entries (e.g., `Daskalakis_2014`, `10.1145/1516512.1516516`) should be checked for consistent brace protection.
+## Methodology
+I parsed the `main.bib` file and checked for:
+1.  **Capitalization Protection Workarounds**: Identifying non-standard ways of protecting title capitalization.
+2.  **Venue Consistency**: Checking for uniform naming and capitalization of conferences like ICML, NeurIPS, and ICRA.
+3.  **BibTeX Style Heterogeneity**: Identifying inconsistencies in the fields provided across different entries.
+4.  **Proper Noun Integrity**: Ensuring terms like `MARVEL`, `Nash`, and `Markov` are correctly handled.
 
-### Outdated arXiv Entries
-The following papers have been formally published and their citations should be updated:
-- `lin2022online` (arXiv:2210.12320) -> **NeurIPS 2023**.
-- `chen2021lyapunov` (arXiv:2102.01567) -> **Operations Research 2024** (published as *"A Lyapunov Theory for Finite-Sample Guarantees of Markovian Stochastic Approximation"*).
-- `leonardos2025globalconvergencemultiagentpolicy` (arXiv:2106.01969) -> **ICLR 2022**.
-- `guo2025markovalphapotentialgames` (arXiv:2305.12553) -> **IEEE Transactions on Automatic Control 2025**.
-- `li2021permutationinvariantpolicyoptimization` (arXiv:2105.08268) -> **NeurIPS 2021**.
+## Key Findings
 
-## Citation Style Issues (.tex)
-- Inconsistent citation style: The manuscript currently mixes standard `\cite` commands (32 instances) with `natbib` commands (`\citep`: 18, `\citet`: 34). Standardizing on `natbib` for all citations is recommended for consistent formatting and better handle of author-year styles.
+### 1. Non-Standard Capitalization Protection
+The bibliography uses highly inconsistent and sometimes redundant methods to protect capitalization in titles:
+- `aina2025deepreinforcementlearningmultiagent`: Uses individual letter protection `{R}einforcement {L}earning`, which is unconventional.
+- `chiun2025marvelmultiagentreinforcementlearning`: Uses a mix of double braces and individual letter protection `{{MARVEL}: {M}ulti-{A}gent ...}`.
+- `craven2005karlin`: Uses double braces for the entire title `{{Karlin's conjecture and a question of P{\'o}lya}}`.
+
+### 2. Inconsistent Venue Capitalization
+Major conferences are cited with varying capitalization:
+- **ICML**: `ding2022independent` uses `International Conference on Machine Learning`, while `fujimoto2019off` uses `International conference on machine learning`.
+- **IEEE Venues**: `Daskalakis_2014` and `chiun2025marvelmultiagentreinforcementlearning` use title case for IEEE symposia/conferences, which is consistent, but they differ in whether they include the series abbreviation (e.g., `(ICRA)`).
+
+### 3. Inconsistent Field Usage
+Entries sourced from different databases (e.g., ACM, IEEE, ArXiv) retain their source-specific fields, leading to a heterogeneous bibliography:
+- Some entries include `isbn`, `address`, `location`, and `abstract` (e.g., `doi:10.1137/1.9781611976465.84`).
+- Others include `keywords`, `doi`, and `publisher` (e.g., `lv2024localinformationaggregationbased`).
+- ArXiv entries vary between using `@article` with `journal={arXiv preprint ...}` and `@misc` with `eprint`.
+
+### 4. Handling of Proper Nouns
+While `Nash` is generally capitalized, terms like `Markov` and `Nash` should be consistently protected (e.g., `{Nash}`) to ensure they are not lowercased by the `icml2026.bst` style.
+
+## Conclusion
+A systematic pass to standardize the BibTeX style and title protection mechanism is recommended to ensure a uniform and professional appearance in the final publication.
