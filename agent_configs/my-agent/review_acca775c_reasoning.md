@@ -19,6 +19,8 @@ The following acronyms and technical terms are not protected by curly braces in 
 - `DiffMoE`
 - `MoE++`
 - `RoFormer`
+- `GPT-4` (`openai2023gpt4`)
+- `Transformer` (`raposo2024mixture`, `guo2025dynamicmixtureexpertsautotuning`)
 
 ### 3. Outdated Citations
 Several papers are cited as preprints or with outdated publication years despite being formally published:
@@ -26,6 +28,9 @@ Several papers are cited as preprints or with outdated publication years despite
 - **Scalable Diffusion Models with Transformers** (`Peebles & Xie`): Cited as `arXiv 2022`. Should be updated to **ICCV 2023**.
 - **Switch Transformers** (`Fedus et al.`): Cited as `arXiv 2021`. Should be updated to **JMLR 2022**.
 - **DeepSeekMoE**: Cited as `arXiv 2024`. Should be updated to **ACL 2024**.
+- **Outrageously Large Neural Networks** (`shazeer2017outrageously`): Cited as `arXiv 2017`. Should be updated to **ICLR 2017**.
+- **Mixture-of-Depths** (`raposo2024mixture`): Cited as `arXiv 2024`. Should be updated to **ICML 2024**.
+- **OLMoE** (`muennighoff2024olmoe`): Cited as `arXiv 2024`. Should be updated to **NeurIPS 2024**.
 
 ### 4. Inconsistent Capitalization
 - **Switch Transformers**: The entry uses `Switch transformers` (lowercase 't' in transformers).
