@@ -1,44 +1,37 @@
-# Citation Integrity Audit: "Transport Clustering: Solving Low-Rank Optimal Transport via Clustering"
+# Bibliography Audit for Paper d50ca57f
 
-I performed a systematic audit of the bibliography for the submission "Transport Clustering: Solving Low-Rank Optimal Transport via Clustering" (d50ca57f). My review focused on bibliographic currency, reference deduplication, and acronym protection.
+**Paper Title**: Transport Clustering: Solving Low-Rank Optimal Transport via Clustering
+**Paper ID**: d50ca57f-ac9a-438f-b0f5-fab02c8d64df
 
-## 1. Outdated Preprints (Published Venues Identified)
-I identified a significant number of references cited as arXiv preprints that have since been formally published. Updating these metadata is essential for scholarly accuracy.
+## Audit Focus
+This audit focuses on bibliographic integrity, specifically the protection of technical acronyms, standardization of conference venues, and accuracy of publication metadata.
 
-| Citation Key | Title | Formal Publication Venue | Year |
-|---|---|---|---|
-| `scetbon2023unbalanced` | Unbalanced Low-rank Optimal Transport Solvers | NeurIPS | 2023 |
-| `liu2021sparse` | Approximating Optimal Transport via Low-rank and Sparse Factorization | Signal Processing | 2023 |
-| `manole2024backgroundmodelingdoublehiggs` | Background Modeling for Double Higgs Boson Production | Annals of Applied Statistics | 2024 |
-| `chewi2024statistical` | Statistical optimal transport | Lecture Notes in Mathematics (Springer) | 2025 |
-| `song2024relax` | Relax and Merge: A Simple Yet Effective Framework... | ICML | 2025 |
-| `zhuang2023statistically` | Statistically optimal k-means clustering via nonnegative... | ICLR | 2024 |
-| `halmos2025hierarchical` | Hierarchical Refinement: Optimal Transport to Infinity... | ICML (Oral) | 2025 |
-| `liu2022sparsity` | Sparsity-constrained optimal transport | ICLR | 2023 |
-| `Sejourne:2022` | Unbalanced optimal transport, from theory to numerics | Handbook of Numerical Analysis | 2023 |
-| `lavenant2021towards` | Towards a mathematical theory of trajectory inference | Annals of Applied Probability | 2024 |
-| `baradat2021regularized` | Regularized unbalanced optimal transport... | Astérisque | 2024 |
-| `leonard2013survey` | A survey of the Schrödinger problem and some of its connections... | DCDS-A | 2014 |
-| `kingma2018glow` | Glow: Generative Flow with Invertible 1x1 Convolutions | NeurIPS | 2018 |
-| `finlay2020train` | How to train your neural ODE | ICML | 2020 |
+## Findings
 
-## 2. Duplicate BibTeX Entries
-The `references.bib` file contains redundant entries for the same works:
-- **Lee & Seung (2000)**: `NMF` and `2ef7006f34ff4cd7afa86c9bc8932c80` ("Algorithms for Non-negative Matrix Factorization").
-- **Blondel et al. (2018)**: `pmlr-v84-blondel18a` and `blondel2018smooth` ("Smooth and Sparse Optimal Transport").
-- **De Loera & Kim (2013)**: `Loera2013CombinatoricsAG` and `de2013combinatorics`.
-- `dong2023partial` and `staahl2016visualization` also appear duplicated.
+### 1. Missing Acronym Protection in Titles
+Several titles contain technical acronyms that are not protected by curly braces `{}`. In the ICML 2026 bibliography style, these will be incorrectly lowercased (e.g., "GAN" becomes "gan").
 
-## 3. Acronym and Case Protection
-Several technical terms and proper nouns in titles lack curly brace `{}` protection, which will lead to incorrect lowercasing (e.g., "aaai" instead of "AAAI"):
-- **Acronyms**: AAAI, CVPR, GAN, VAE, ICML, NeurIPS, DNA, RNA, SLAT, SHAPER, NDRG1, NVP.
-- **Proper Nouns**: Drosophila, Wasserstein, Gaussian, Sinkhorn, Schrödinger.
-- **Methods**: t-SNE, Stereo-seq, k-means.
+*   **Entry `GAN and VAE from an optimal transport point of view`**: "GAN" and "VAE" should be "{GAN}" and "{VAE}".
+*   **Entry `Improving GANs Using Optimal Transport`**: "GANs" should be "{GAN}s".
+*   **Entry `Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA`**: "DNA" should be "{DNA}".
+*   **Entry `DeST-OT: Alignment of spatiotemporal transcriptomics data`**: While "OT" is protected as `{OT}`, the title should ideally be protected more consistently if acronyms are present.
 
-## 4. Minor Inconsistencies and Typos
-- `GarciaBellido1971`: Typo in title (`ofDrosophila` instead of `of Drosophila`).
-- `shendure2022`: Journal should be capitalized as **Nature Genetics**.
-- Inconsistent citation style: The manuscript mixes standard `\cite` with natbib commands (`\citep`/`\citet`). Consistency is recommended.
+### 2. Unprotected Acronyms in Conference Names (Booktitles)
+Many conference names contain acronyms that are not protected, leading to inconsistent rendering.
 
-## Evidence and Verification
-Verification was performed via cross-referencing arXiv IDs against major publication databases (Google Scholar, OpenReview, DBLP). All formal publication venues listed above have been confirmed.
+*   **Entry `kmpp`**: `booktitle = {Proceedings of the Eighteenth Annual ACM-SIAM Symposium on Discrete Algorithms}`. "ACM-SIAM" should be "{ACM}-{SIAM}".
+*   **Entry `kernel_Kmeans`**: `booktitle = {Proceedings of the Tenth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}`. "ACM SIGKDD" should be "{ACM} {SIGKDD}".
+*   **Multiple Entries**: `booktitle = {ICML}`. Should be `{ICML}` or `{International Conference on Machine Learning}`.
+*   **Multiple Entries**: `booktitle = {NeurIPS}`. Should be `{NeurIPS}` or `{Advances in Neural Information Processing Systems}`.
+
+### 3. Inconsistent Venue Capitalization
+The venue "Advances in Neural Information Processing Systems" is inconsistently capitalized across entries.
+*   **18 entries** use title case: `Advances in Neural Information Processing Systems`.
+*   **7 entries** use lowercase: `Advances in neural information processing systems`.
+Standardizing to title case is recommended.
+
+### 4. Outdated Metadata
+*   **Entry `vaswani2017attention`**: Cites "Advances in neural information processing systems" but is missing the specific volume or page numbers found in the final version (NeurIPS 2017, Vol 30).
+
+## Recommendations
+Standardize all BibTeX entries to ensure acronyms are protected by curly braces and venues are consistently named and capitalized.
