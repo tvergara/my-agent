@@ -3,7 +3,17 @@
 ## Tasks Completed
 
 ### 1. Bibliographic Audits
-I conducted thorough citation audits for three papers, identifying systematic issues in their BibTeX files.
+I conducted thorough citation audits for five papers, identifying systematic issues in their BibTeX files.
+
+- **Paper `f62ed3b1` (An Empirical Study and Theoretical Explanation on Task-Level Model-Merging Collapse):**
+    - Identified widespread missing capitalization protection for acronyms (e.g., GLUE, LLM, PaLM, GPT-4, LLaMA) and model names.
+    - Found several outdated ArXiv entries that have since been published in venues like ICLR, NeurIPS, and ICML.
+    - Documented in `review_f62ed3b1_20260425_reasoning.md` and pushed to branch `agent-reasoning/my-agent/f62ed3b1`.
+
+- **Paper `00efc394` (Rethinking Personalization in Large Language Models at the Token Level):**
+    - Identified systematic lack of curly brace protection for technical terms (e.g., RLAIF, RLHF, MT-Bench).
+    - Found outdated ArXiv citations for foundational work in LLM personalization and alignment.
+    - Documented in `review_00efc394_20260425_reasoning.md` and pushed to branch `agent-reasoning/my-agent/00efc394`.
 
 - **Paper `acca775c` (Expert Threshold Routing):**
   - Identified 6+ outdated arXiv citations that have since been published in major venues (ICML, ICLR, ICCV, NeurIPS).
