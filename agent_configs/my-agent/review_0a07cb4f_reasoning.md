@@ -1,0 +1,79 @@
+# Audit Results for Paper 0a07cb4f
+
+## Bibliography Issues (.bib)
+- Capitalization issue: `Attention` in title `Attention is All you Need...` should likely be in braces.
+- Capitalization issue: `ICLR` in title `DeepRLStructPred@ICLR...` should likely be in braces.
+- Capitalization issue: `NeurIPS` in title `Advances in Neural Information Processing Systems 36 (NeurIP...` should likely be in braces.
+- Capitalization issue: `RL` in title `Putting the Value Back in RL: Better Test-Time Scaling by Un...` should likely be in braces.
+- Capitalization issue: `RL` in title `RL Tango: Reinforcing Generator and Verifier Together for La...` should likely be in braces.
+- Capitalization issue: `RL` in title `Scaling Test-Time Compute Without Verification or RL is Subo...` should likely be in braces.
+- Capitalization issue: `RL` in title `VinePPO: Unlocking RL Potential For LLM Reasoning Through Re...` should likely be in braces.
+- Outdated arXiv entry: `DBLP:journals/corr/abs-2110-14168` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `ankner2024critique` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `bai2022constitutional` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `bansal2024smaller` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `brown2024large` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `chen2021evaluatinglargelanguagemodels` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `chen2025reinforcement` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `comanici2025gemini25` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `deepseekai2025deepseekr1incentivizingreasoningcapability` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `goyal2023think` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `grattafiori2024llama` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `hendrycks2021measuring` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `hoffmann2022trainingcomputeoptimallargelanguage` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `hurst2024gpt` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `jain2024livecodebench` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `jiang2025pagmultiturnreinforcedllm` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `kaplan2020scaling` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `kazemnejad2024vineppounlockingrlpotential` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `khairi2025makingtakingbestn` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `kumar2024traininglanguagemodelsselfcorrect` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `lee2025learninggenerateunittest` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2025llms` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `li2025stesttimescaling` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `lian2025threadweaveradaptivethreadingefficient` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `liu2023don` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `liu2025inferencetimescalinggeneralistreward` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `liu2025trustverifyselfverificationapproach` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `liu2025understandingr1zerotraining` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `lu2025doesverificationpayoff` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `madaan2025rethinkingthinkingtokensllms` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `mahan2024generative` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `mahdavi2025scaling` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `muennighoff2025s1` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `nakano2021webgpt` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `novikov2025alphaevolve` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `pan2025learning` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `ruan2025critiquecoderenhancingcodermodels` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `saha2025learningplanreason` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `sareen2025puttingvaluerlbetter` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `setlur2025scalingtesttimecomputeverification` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `shah2025aiassistedgenerationdifficultmath` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `shao2024deepseekmathpushinglimitsmathematical` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `sheng2024hybridflow` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `shi2025heimdalltesttimescalinggenerative` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `singhi2025whentosolve` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `snell2024scalingllmtesttimecompute` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `sun2024easytohardgeneralizationscalablealignment` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `toshniwal2025genselect` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `venkatraman2025recursiveselfaggregationunlocksdeep` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wang2025coevolvingllmcoderunit` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wang2025critique` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `whitehouse2025j1incentivizingthinkingllmasajudge` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `wu2025inferencescalinglawsempirical` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `yang2024qwen25mathtechnicalreportmathematical` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `yang2024qwen2` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `yang2025qwen3technicalreport` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `yu2025dapoopensourcellmreinforcement` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `yuan2024freeprocessrewardsprocess` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zha2025rltangoreinforcinggenerator` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhang2025critiquegrpoadvancingllmreasoning` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhang2025generativeverifiersrewardmodeling` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhang2025incentivizingllmsselfverifyanswers` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhang2025lessonsdevelopingprocessreward` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhao2025majority` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `zhao2025samplescrutinizescaleeffective` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+- Outdated arXiv entry: `ziegler2019rlhf` is listed as an arXiv preprint. Check if it has been published in a conference or journal.
+
+## Citation Issues (.tex)
+- Inconsistent citation style: Uses both `\cite` and natbib commands (`\citep`/`\citet`). Counts: {'\\cite': 2, '\\citep': 61, '\\citet': 11}
