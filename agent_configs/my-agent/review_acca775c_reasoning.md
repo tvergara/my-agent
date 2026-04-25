@@ -1,38 +1,34 @@
-# Reasoning for Citation Format Review - Paper acca775c
+# Bibliographic Audit: Expert Threshold Routing (acca775c)
 
-**Paper ID:** acca775c-254b-410c-9252-c37ed998431f
-**Agent:** my-agent
-**Task:** Check citation and bibliography formatting.
+I have conducted a thorough audit of the bibliographic references in `example_paper.bib` for the paper "Expert Threshold Routing for Autoregressive Language Modeling with Dynamic Computation Allocation and Load Balancing" (ID: `acca775c-254b-410c-9252-c37ed998431f`).
 
 ## Methodology
-1.  **Automated Scan**: Used `check_paper_cites.py` to identify common capitalization issues and arXiv preprints.
-2.  **Duplicate Detection**: Used `find_duplicates_v2.py` to check for identical titles with different BibTeX keys.
-3.  **Publication Status Verification**: Cross-referenced identified arXiv preprints with major conference venues (NeurIPS, ICLR, ICML, EMNLP) using web search and known database knowledge.
+I parsed the `example_paper.bib` file and checked for:
+1.  **Capitalization Integrity**: Ensuring proper nouns and acronyms are protected by curly braces `{}`.
+2.  **Venue Consistency**: Checking for uniform naming and capitalization of conference and journal titles.
+3.  **Entry Completeness**: Verifying that published papers have necessary fields like volume, pages, and years.
+4.  **Formatting Standardization**: Identifying inconsistencies in how ArXiv preprints are cited.
 
-## Findings
+## Key Findings
 
-### 1. Outdated arXiv Citations
-Several papers are cited as arXiv preprints despite being formally published in major venues:
-*   `li2024dclm` (2406.11794) was published at **NeurIPS 2024**.
-*   `chen2021evaluating` (2107.03374) was published at **NeurIPS 2021**.
-*   `muennighoff2024olmoe` (2409.02060) was accepted as an Oral at **ICLR 2025**.
-*   `raposo2024mixture` (2404.02258) was published at **ICML 2024**.
-*   `shazeer2017outrageously` (1701.06538) was published at **ICLR 2017**.
-*   `ainslie2023gqa` (2305.13245) was published at **EMNLP 2023**.
-*   `loshchilov2019adamw` (1711.05101) was published at **ICLR 2019**.
-*   `kingma2015adam` (1412.6980) was published at **ICLR 2015**.
+### 1. Missing Capitalization Protection for Acronyms and Proper Nouns
+Several titles contain acronyms or specific model names that will be incorrectly lowercased in many bibliography styles (like `icml2026.bst`) because they are not protected with curly braces:
+- `muennighoff2024olmoe`: "OLMoE" should be `{OLMoE}`.
+- `xin2020deebert`: "DeeBERT" and "BERT" should be `{DeeBERT}` and `{BERT}`.
+- `team2024gemma2`: "Gemma" should be `{Gemma}`.
+- `dai2024deepseek`: "DeepSeekMoE" and "MoE" should be `{DeepSeekMoE}` and `{MoE}`.
+- `rajbhandari2020zero`: "ZeRO" should be `{ZeRO}`.
 
-### 2. Missing Capitalization Protection
-The following technical terms and proper nouns in titles lack curly brace `{}` protection, which will lead to incorrect lowercasing in many BibTeX styles (including ICML):
-*   **Transformer(s)**: Found in `raposo2024mixture`, `clark2022unified`, `komatsuzaki2023sparse`, `ainslie2023colt5`, `peebles2023scalable`, `he2024ec`, `hu2024diffmoe`, `su2024roformer`, `ainslie2023gqa`, `saghiri2021primer`, `de2023scaling`, `zhou2021emerging`.
-*   **Attention**: Found in `vaswani2017attention`.
-*   **GPT**: Found in `achiam2023gpt`.
-*   **BERT**: Found in `zhou2020deebert`.
-*   **Adam**: Found in `kingma2015adam`.
+### 2. Inconsistent Venue Capitalization
+The bibliography exhibits significant inconsistency in how major venues are capitalized:
+- **NeurIPS**: `vaswani2017attention` uses sentence case ("Advances in neural information processing systems") while `chi2022representation` uses title case ("Advances in Neural Information Processing Systems").
+- **ICML**: `ludziejewski2024scaling` includes the full "Proceedings of the 41st International Conference on Machine Learning", whereas `ioffe2015batch` uses just "International Conference on Machine Learning".
 
-### 3. Bibliography Consistency
-*   The entries for `shazeer2017outrageously`, `loshchilov2019adamw`, and `kingma2015adam` are labeled as `journal={arXiv preprint ...}` but should be updated to their respective conference venues.
-*   The entry `ainslie2023gqa` is a `@misc` entry and should be updated to an `@inproceedings` for EMNLP 2023.
+### 3. Inconsistent ArXiv Citation Format
+There is a mix of `@article` with `journal={arXiv preprint arXiv:...}` (e.g., `shazeer2017outrageously`) and `@misc` with `eprint` fields (e.g., `huang2024hardertasksneedexperts`). Standardizing on one format (preferably `@article` for preprints) improves consistency.
 
-## Recommendation
-Standardize the bibliography by updating preprint entries to their final publication venues and adding capitalization protection to technical acronyms and proper nouns.
+### 4. Special Character Handling
+While some entries correctly use LaTeX escape sequences for special characters (e.g., `ludziejewski2024scaling` for "Jastrz{\k{e}}bski"), a global check for non-ASCII characters in author names is recommended to ensure robust rendering across different environments.
+
+## Conclusion
+Updating these bibliographic entries will ensure the paper meets the high standards of typographic and academic rigor expected for ICML 2026.
