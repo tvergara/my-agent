@@ -1,21 +1,38 @@
-# Reasoning for Citation Audit - Paper 230fcebb
+# Bibliography Audit for Paper 230fcebb
 
-## Observations
+**Paper Title**: An Empirical Study and Theoretical Explanation on Task-Level Model-Merging Collapse
+**Paper ID**: 230fcebb-7586-46e3-9897-191540be9efa
 
-I have audited the bibliography files (`main.bib` and `main_2.bib`) for the paper "Why Depth Matters in Parallelizable Sequence Models: A Lie Algebraic View".
+## Audit Focus
+This audit focuses on bibliographic integrity, specifically the protection of technical acronyms, the removal of redundant string definitions, and the accuracy of publication metadata.
 
-### 1. Missing Capitalization Protection for Proper Nouns
-Multiple entries fail to protect "Lie" (referring to Sophus Lie) with curly braces. This can lead to incorrect lowercasing in styles like `icml2026.bst`.
-- `hall2013lie`: `title={Lie groups, Lie algebras, and representations...}`
-- `iserles2000lie`: `title={Lie-group methods}`
-- `walker2024log`: `title={Log neural controlled differential equations: The lie brackets make a difference}` (Note: "lie" is even lowercased in the source bib entry).
-- `Kaluzhnin-Krasner` is not protected in its entry.
+## Findings
 
-### 2. Redundancy and Template Cruft
-- `main_2.bib` contains many redundant `@STRING` definitions and template entries (e.g., `Samuel59`, `mitchell80`) that are not cited in the main text. These should be removed for a cleaner submission.
+### 1. Missing Acronym Protection in Titles
+Several BibTeX entries contain acronyms or proper names in the `title` field that are not protected by curly braces `{}`.
 
-### 3. Outdated Citations
-- `sieber2024understanding` is cited as being in NeurIPS 2024, which is good, but many other works are still listed as arXiv preprints from 2022 and 2024 (e.g., `beckett2022symplectic`, `chevyrev2024multiplicative`) which may have published versions available by now.
+*   **Entry `walker2025structured`**: "CDEs" should be protected as `{CDEs}`.
+*   **Entry `sieber2024understanding`**: "state space models" (SSM) and "recurrent neural networks" (RNN) are lowercase in the title, which is consistent with sentence case, but if the authors intend for them to be recognized as technical terms, they should be consistent.
+*   **Entry `peng2025rwkv`**: While `{RWKV}` is protected, "Goose" (the model version name) is not.
+*   **Entry `MachineLearningI`**: "Artificial Intelligence" in the title should be protected if capitalization preservation is required.
 
-## Conclusion
-The bibliography needs a cleanup pass to ensure all proper nouns (especially "Lie") are protected by curly braces and to remove redundant template entries.
+### 2. Redundant String Definitions
+The `main.bib` file contains two identical blocks of `@STRING` definitions for major conferences and journals (PAMI, ACL, CVPR, ICML, etc.). While this doesn't break BibTeX, it makes the file difficult to maintain and increases the risk of inconsistent definitions if one is updated but not the other.
+
+### 3. Outdated arXiv Citations
+A large number of entries reference arXiv preprints, many of which are several years old and likely have formal conference or journal versions available:
+*   `beckett2022symplectic` (2022)
+*   `burde2012derived` (2012)
+*   `chen2022transdreamer` (2022)
+*   `coffi2007produit` (2007)
+*   `hu2024limitation` (2024)
+*   `walker2024log` (2024)
+
+### 4. Inconsistent Formatting of Authors
+*   **Entry `PhysicsExtension`**: Uses a mix of initials and full names (`E.A. {De Kerf}` vs `G.G.A. Bäuerle`), which can lead to inconsistent rendering in the final bibliography.
+
+## Recommendations
+- Remove the duplicate `@STRING` definition blocks.
+- Protect technical acronyms like `{CDEs}` and `{RNN}` with curly braces.
+- Update old arXiv preprints to their latest published versions where available.
+- Standardize author name formats across all entries.
