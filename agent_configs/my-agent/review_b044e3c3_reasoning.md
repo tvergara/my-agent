@@ -1,29 +1,23 @@
-# Reasoning for Citation Audit - Paper b044e3c3
+# Bibliographic Audit: EEG Transformer (b044e3c3)
 
-**Paper ID:** b044e3c3-4a8e-4a74-a3b8-13584deba079
-**Agent:** My Testing Agent (fb360bb7-38e9-4b89-9d0a-a1a804445ce2)
-**Focus:** Citation Formatting and Metadata Accuracy
+I have conducted a systematic audit of the bibliography (`REFERENCES.bib`) for the EEG Transformer submission. The following issues were identified:
 
-## Analysis of REFERENCES.bib
+### 1. Major Attribution and Metadata Error
+- **FBCNet** (`ingolfsson2021fbconet`): The entry incorrectly attributes "FBCNet: A multi-view convolutional neural network for brain-computer interface" to *Ingolfsson et al.* and lists it as a 2021 IEEE SMC publication.
+- **Correction**: FBCNet was authored by **Ravikiran Mane et al.** and was published in **IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE)** in **2022** (Volume 30, pp. 2027--2037). It appears the metadata was inadvertently duplicated from the `ingolfsson2020eegtcnet` entry.
 
-I extracted the LaTeX source and examined `REFERENCES.bib`. Several issues were identified:
+### 2. Missing Capitalization Protection (Brace Protection)
+Several technical acronyms and terms are not protected by curly braces in their titles, which will result in incorrect lowercasing (e.g., "eeg" instead of "EEG") under the ICML bibliography style:
+- `EEG`, `SPD`, `BCI`, `FBCNet`, `EEG-TCNet`, `ManifoldNet`, `LMDA-Net`.
+- Proper nouns like `Riemannian`, `Log-Euclidean`, and `Kakutani`.
 
-### 1. Major Citation Error: ingolfsson2021fbconet
-- **Current Entry:** Attributes "FBCNet: A multi-view convolutional neural network for brain-computer interface" to `Ingolfsson et al.` and `SMC 2021` with pages `2958--2965`.
-- **Actual Paper:** This work (FBCNet) is by **Mane et al.** (Ravikiran Mane, Efryan Chew, et al.). It was published on **arXiv in 2021** and in **IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE) in 2022** (Volume 30, pp. 2027-2037).
-- **Error Source:** The bib entry seems to have copied the author list, booktitle, and pages from the preceding entry `ingolfsson2020eegtcnet` (which is correctly attributed to Ingolfsson et al., SMC 2020, pp. 2958-2965).
+### 3. Outdated arXiv Citations
+Multiple entries are cited as arXiv preprints despite having been formally published:
+- **ManifoldNet** (`chakraborty2020manifoldnet`): Should be updated to its formal publication in **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)** in **2022**.
+- **Geometric Deep Learning** (`bronstein2021geometric`): Can now be cited as the 2026 textbook from **MIT Press**.
 
-### 2. Capitalization Issues (Missing Braces)
-Several titles lack capitalization protection for acronyms and proper nouns, which will result in lowercase rendering in most styles (including ICML's):
-- `vaswani2017attention`: "Attention" and "Transformer" (implied context) should be protected.
-- `schirrmeister2017deep`: "EEG" should be "{EEG}".
-- `lawhern2018eegnet`: "EEGNet" and "EEG" should be protected.
-- `song2022eegconformer`: "EEG" should be protected.
-- `he2015maximizing`: "Maximizing" (start of title is usually fine, but covariance alignment context is often capitalized).
+### 4. Missing or Inconsistent Metadata
+- **Attention is All You Need** (`vaswani2017attention`): Missing page numbers (**5998--6008**).
+- **Key-Year Discrepancy** (`barachant2013multiclass`): The citation key ends in 2013, but the year field is **2012**.
 
-### 3. Outdated/Incomplete Metadata
-- `bronstein2021geometric`: Cited as an arXiv preprint (`arXiv:2104.13478`). This is a foundational work in Geometric Deep Learning that has more stable/formal citations available.
-- `barachant2013multiclass`: The key uses 2013, but the `year` field is 2012. Volume 59 Issue 4 of IEEE TBME was indeed 2012.
-
-## Conclusion
-The most critical issue is the misattribution of the FBCNet paper. This affects the credit given to the original authors (Mane et al.) and provides incorrect venue information for readers. Correcting this and the capitalization issues will significantly improve the paper's scholarly rigor.
+Addressing these corrections will ensure the manuscript meets professional academic standards and reflects the current state of the literature.
