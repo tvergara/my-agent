@@ -1,33 +1,46 @@
-# Citation Formatting Audit for Paper acca775c
+# Citation Formatting Audit: acca775c
 
-## Paper Information
-- **ID**: acca775c-254b-410c-9252-c37ed998431f
-- **Title**: Expert Threshold Routing for Autoregressive Language Modeling with Dynamic Computation Allocation and Load Balancing
+Paper: Expert Threshold Routing for Autoregressive Language Modeling with Dynamic Computation Allocation and Load Balancing
+ID: acca775c-254b-410c-9252-c37ed998431f
 
-## Identified Issues
+## Observations
 
-### 1. Missing Acronym Protection in Titles
-Several titles in `example_paper.bib` contain technical acronyms and model names that are not protected with curly braces `{}`. This will cause them to be incorrectly lowercased in many bibliography styles.
-Examples:
-- `transformer-based` in `Mixture-of-Depths: Dynamically allocating compute in transformer-based language models`
-- `LLMs` in `Ada-K Routing: Boosting the Efficiency of MoE-based LLMs`
-- `GPTs` in `nanoGPT: The simplest, fastest repository for training/finetuning medium-sized GPTs`
-- `Transformers` in `Scalable Diffusion Models with Transformers`
+The following issues were identified in the citation formatting of the paper, specifically within `example_paper.bib`:
 
-### 2. Outdated arXiv Citations
-Several entries are cited as `arXiv preprint` even though they have since been formally published in major conferences or journals.
-Examples:
-- `li2024dclm` (DataComp-LM)
-- `muennighoff2024olmoe` (OLMoE)
-- `raposo2024mixture` (Mixture-of-Depths)
+### 1. Unprotected Acronyms and Proper Names in Titles
+Many entries in the BibTeX file contain acronyms and proper names that are not enclosed in double braces `{...}`. In most LaTeX styles (including ICML), these will be incorrectly converted to lowercase.
 
-### 3. Inconsistent Venue Naming
-The venue `Advances in Neural Information Processing Systems` is used for `zhou2022mixture`, but other entries might use abbreviated or slightly different names. Consistent naming and acronym protection (e.g., `{NeurIPS}`) is recommended.
+Affected entries and keys:
+- `muennighoff2024olmoe`: OLMoE
+- `huang2024hardertasksneedexperts`: MoE
+- `yue2024adakroutingboostingefficiency`: Ada-K, MoE, LLMs
+- `wang2025remoe`: ReMoE
+- `liu2024unimoeaudio`: UniMoE-Audio, MoE
+- `ni2025openmoe2`: OpenMoE 2
+- `dai2024deepseek`: DeepSeekMoE, MoE
+- `deepseekv3`: DeepSeek-V3
+- `karpathy2022nanogpt`: nanoGPT, GPTs
+- `karpathy2025nanochat`: nanochat, ChatGPT
+- `shi2025diffmoe`: DiffMoE
+- `openai2023gpt4`: GPT-4
+- `jin2024moe++`: MoE++
+- `shao2024deepseekmath`: DeepSeekMath
+- `zoph2022stmoe`: ST-MoE
+- `zhong2024lory`: Lory
+- `wen2025seqtopk`: SeqTopK
+- `zhang2019rmsnorm`: RMSNorm
+- `su2024rope`: RoPE
+- `ainslie2023gqa`: GQA
+- `loshchilov2019adamw`: AdamW
+- `yang2022mup`: muP
+- `dehghani2023vit22b`: ViT-22B
+
+### 2. Inconsistent Journal/Booktitle Formatting
+- `komatsuzaki2023sparse` uses `International Conference on Learning Representations (ICLR)` while others like `lepikhin2021gshard` use `International Conference on Learning Representations`.
+- Some arXiv entries use the `journal={arXiv preprint arXiv:XXXX.XXXXX}` format, while others use the `eprint`/`archivePrefix` fields.
+
+### 3. Missing Brackets in `howpublished`
+- `ni2025openmoe2`, `karpathy2022nanogpt`, and `karpathy2025nanochat` have raw `\url{...}` in `howpublished` which might be better formatted as `{\url{...}}` or consistent with other entries.
 
 ## Evidence
-The issues were identified by inspecting `example_paper.bib` extracted from the paper's source tarball.
-
-```bash
-# Check for acronyms in titles
-grep -iE "LLM|CNN|RNN|GAN|VAE|Transformer|BERT|GPT" paper_acca775c/example_paper.bib
-```
+Analysis performed on `v2.tex` and `example_paper.bib` extracted from `acca775c-254b-410c-9252-c37ed998431f.tar.gz`.
