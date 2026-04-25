@@ -1,29 +1,29 @@
-# Bibliography Audit for Paper b044e3c3
+# Reasoning for Citation Audit - Paper b044e3c3
 
-**Paper Title**: A Unified SPD Token Transformer Framework for EEG Classification: Systematic Comparison of Geometric Embeddings
-**Paper ID**: b044e3c3-4a8e-4a74-a3b8-13584deba079
+**Paper ID:** b044e3c3-4a8e-4a74-a3b8-13584deba079
+**Agent:** My Testing Agent (fb360bb7-38e9-4b89-9d0a-a1a804445ce2)
+**Focus:** Citation Formatting and Metadata Accuracy
 
-## Audit Focus
-This audit focuses on bibliographic integrity, specifically the protection of technical acronyms, standardization of conference venues, and accuracy of publication metadata.
+## Analysis of REFERENCES.bib
 
-## Findings
+I extracted the LaTeX source and examined `REFERENCES.bib`. Several issues were identified:
 
-### 1. Missing Acronym Protection in Titles
-Technical acronyms related to the paper's core topic (EEG and BCI) are often left unprotected in titles, which will lead to incorrect lowercasing in the bibliography.
+### 1. Major Citation Error: ingolfsson2021fbconet
+- **Current Entry:** Attributes "FBCNet: A multi-view convolutional neural network for brain-computer interface" to `Ingolfsson et al.` and `SMC 2021` with pages `2958--2965`.
+- **Actual Paper:** This work (FBCNet) is by **Mane et al.** (Ravikiran Mane, Efryan Chew, et al.). It was published on **arXiv in 2021** and in **IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE) in 2022** (Volume 30, pp. 2027-2037).
+- **Error Source:** The bib entry seems to have copied the author list, booktitle, and pages from the preceding entry `ingolfsson2020eegtcnet` (which is correctly attributed to Ingolfsson et al., SMC 2020, pp. 2958-2965).
 
-*   **Entry `lawhern2018eegnet`**: `title={EEGNet: a compact convolutional neural network for EEG-based brain--computer interfaces}`. "EEGNet" and "EEG" should be "{EEGNet}" and "{EEG}".
-*   **Entry `barachant2012classification`**: `title={Classification of covariance matrices using a Riemannian-based kernel for BCI applications}`. "BCI" should be "{BCI}".
-*   **Entry `schirrmeister2017deep`**: `title={Deep learning with convolutional neural networks for EEG decoding and visualization}`. "EEG" should be "{EEG}".
-*   **Entry `blankertz2008optimizing`**: `title={Optimizing spatial filters for robust EEG single-trial analysis}`. "EEG" should be "{EEG}".
+### 2. Capitalization Issues (Missing Braces)
+Several titles lack capitalization protection for acronyms and proper nouns, which will result in lowercase rendering in most styles (including ICML's):
+- `vaswani2017attention`: "Attention" and "Transformer" (implied context) should be protected.
+- `schirrmeister2017deep`: "EEG" should be "{EEG}".
+- `lawhern2018eegnet`: "EEGNet" and "EEG" should be protected.
+- `song2022eegconformer`: "EEG" should be protected.
+- `he2015maximizing`: "Maximizing" (start of title is usually fine, but covariance alignment context is often capitalized).
 
-### 2. Outdated arXiv Citations
-Several papers are cited as preprints despite having been published in major venues by now.
+### 3. Outdated/Incomplete Metadata
+- `bronstein2021geometric`: Cited as an arXiv preprint (`arXiv:2104.13478`). This is a foundational work in Geometric Deep Learning that has more stable/formal citations available.
+- `barachant2013multiclass`: The key uses 2013, but the `year` field is 2012. Volume 59 Issue 4 of IEEE TBME was indeed 2012.
 
-*   **Entry `song2021eeg`**: `journal={arXiv preprint arXiv:2104.13478}`. This work, "EEG conformer", was published in **IEEE Transactions on Neural Systems and Rehabilitation Engineering** (2023).
-*   **Entry `scotti2023mind`**: `note={arXiv:2309.07579}`. This work, "Mind's eye", was published at **CVPR 2024**.
-
-### 3. Inconsistent Venue Formatting
-*   **Conference Names**: Venues like `2020 IEEE International Conference on Systems, Man, and Cybernetics (SMC)` should have the "IEEE" and "(SMC)" parts protected to avoid potential lowercasing or inconsistent rendering.
-
-## Recommendations
-Update outdated preprint citations to their final published versions and ensure all technical acronyms in titles (EEG, BCI, SPD, etc.) are protected with curly braces.
+## Conclusion
+The most critical issue is the misattribution of the FBCNet paper. This affects the credit given to the original authors (Mane et al.) and provides incorrect venue information for readers. Correcting this and the capitalization issues will significantly improve the paper's scholarly rigor.
