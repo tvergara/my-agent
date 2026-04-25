@@ -1,20 +1,30 @@
 # Reasoning for Paper 7920483a: Compression as Adaptation: Implicit Visual Representation with Diffusion Foundation Models
 
-I have reviewed the bibliography artifacts (`draft_zongyu.bbl`) for the paper `7920483a` and identified several citation formatting issues, specifically regarding capitalization preservation.
+I have conducted a systematic audit of the bibliography for this submission, primarily using the provided `.bbl` file as the source of truth for rendered citations. My review identified several areas where the bibliographic foundation could be strengthened to meet professional academic standards.
 
-## Observations
+## Key Findings
 
-The following entries in the bibliography have acronyms or proper names that appear incorrectly rendered in the `.bbl` file, likely due to a lack of brace protection `{...}` in the original `.bib` source.
+### 1. Outdated arXiv Citations
+Several key works are cited as arXiv preprints despite having been formally published in major conference venues. Updating these would improve the rigor and currency of the manuscript:
+- **Stochastic Interpolants** (`albergo2023stochastic`): arXiv:2303.08797 → **ICLR 2023**.
+- **Flow Matching** (`lipman2022flow`): arXiv:2210.02747 → **ICLR 2023**.
+- **Score-Based Generative Modeling** (`song2020score`): arXiv:2011.13456 → **ICLR 2021**.
+- **Towards Accurate Generative Models of Video** (`unterthiner2018towards`): arXiv:1812.01717 → **ICLR 2019**.
+- **Diffusion Posterior Sampling** (`chung2022diffusion`): arXiv:2209.14687 → **ICLR 2023**.
 
-### Acronyms and Proper Names Needing Correction:
+### 2. Missing Capitalization Protection (Brace Protection)
+Several acronyms and technical terms are rendered with incorrect casing in the `.bbl` file, suggesting a lack of curly brace `{}` protection in the original `.bib` entries. This results in incorrect lowercasing by the bibliography style:
+- **GPT-5.1**: Rendered as "Gpt-5.1" in `openai2025gpt51`.
+- **VVC**: Rendered as "Vvc" in `VTM(2021)`.
+- **LoRA**: Rendered as "lora" or "Uni-lora" in `gao2025lora`, `li2025unilora`, and `mi2025empower`.
+- **LMM**: Rendered as "lmm" in `mi2025empower`.
+- **NeRV / H-NeRV**: Rendered as "Nerv" and "Hnerv" in `chen2021nerv` and `chen2023hnerv`.
 
-1.  **NeRV**: `\newblock Nerv: Neural representations for videos.` (in `chen2021nerv`). Should be braced as `{NeRV}` to preserve its specific capitalization.
-2.  **H-NeRV**: `\newblock Hnerv: A hybrid neural representation for videos.` (in `chen2023hnerv`). Should be braced as `{H-NeRV}` or `{HNeRV}`.
-3.  **OpenAI**: `\emph{OpenAI Blog}`. While often rendered correctly, it is safer to brace `{OpenAI}`.
-4.  **IEEE/CVF**: `In \emph{Proceedings of the IEEE/CVF Conference...}`. Acronyms in conference names should be protected, e.g., `{IEEE}/{CVF}`.
-5.  **PMLR**: `\dots pp.\ 2285--2294. PMLR, 2015.` Acronyms in organization fields should also be protected `{PMLR}`.
-6.  **arXiv**: `\emph{arXiv preprint arXiv:2303.08797}`. Standard practice is to brace `{arXiv}`.
+### 3. Missing Metadata
+- **NeRV** (`chen2021nerv`): The entry lists "volume 34, 2021" but omits the venue name (**NeurIPS**).
+
+### 4. Inconsistent Conference Naming
+There are inconsistencies in how conference names are formatted, with some using the full name and others using abbreviated versions (e.g., "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition" vs. "Proceedings of the Computer Vision and Pattern Recognition Conference").
 
 ## Conclusion
-
-The bibliography would benefit from a pass to ensure all technical acronyms (especially domain-specific ones like NeRV and H-NeRV) are protected with braces in the `.bib` file to prevent them from being converted to lowercase by the bibliography style.
+Standardizing the bibliography by updating preprint citations to their peer-reviewed versions and ensuring proper acronym protection would significantly enhance the scholarly quality and professional presentation of the manuscript.
